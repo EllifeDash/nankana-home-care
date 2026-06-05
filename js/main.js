@@ -13,7 +13,7 @@ const HEADER_HTML = `
 <header id="site-header">
   <div class="nav-inner">
     <!-- Logo -->
-    <a href="home.html" class="nav-logo">
+    <a href="index.html" class="nav-logo">
       <div class="nav-logo-icon">
         <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
@@ -25,7 +25,7 @@ const HEADER_HTML = `
 
     <!-- Desktop nav -->
     <ul class="nav-links">
-      <li><a href="home.html"     data-page="home">Home</a></li>
+      <li><a href="index.html"     data-page="home">Home</a></li>
       <li><a href="about.html"    data-page="about">About</a></li>
       <li><a href="services.html" data-page="services">Services</a></li>
       <li><a href="join-us.html"  data-page="join-us">Join Us</a></li>
@@ -42,7 +42,7 @@ const HEADER_HTML = `
 <!-- Mobile dropdown -->
 <nav class="nav-mobile" id="navMobile" role="navigation" aria-label="Mobile navigation">
   <ul>
-    <li><a href="home.html"     data-page="home">Home</a></li>
+    <li><a href="index.html"     data-page="home">Home</a></li>
     <li><a href="about.html"    data-page="about">About Us</a></li>
     <li><a href="services.html" data-page="services">Our Services</a></li>
     <li><a href="join-us.html"  data-page="join-us">Join Our Team</a></li>
@@ -57,7 +57,7 @@ const FOOTER_HTML = `
 
       <!-- Brand -->
       <div class="footer-brand">
-        <a href="home.html" class="nav-logo">
+        <a href="index.html" class="nav-logo">
           <div class="nav-logo-icon">
             <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2">
               <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
@@ -73,7 +73,7 @@ const FOOTER_HTML = `
       <div class="footer-col">
         <h5>Quick Links</h5>
         <ul>
-          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Our Services</a></li>
           <li><a href="join-us.html">Join Our Team</a></li>
@@ -230,30 +230,6 @@ function initReveal() {
   els.forEach(el => observer.observe(el));
 }
 
-// ── Booking Form Handler ───────────────────
-// Only runs on booking.html. Handles submission feedback.
-
-function initBookingForm() {
-  const form = document.getElementById('bookingForm');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn  = form.querySelector('[type="submit"]');
-    const orig = btn.textContent;
-
-    btn.textContent = 'Sending…';
-    btn.disabled    = true;
-
-    // Simulate async send — replace with real API call / Formspree / EmailJS
-    setTimeout(() => {
-      form.style.display = 'none';
-      const success = document.getElementById('formSuccess');
-      if (success) success.style.display = 'block';
-    }, 1400);
-  });
-}
-
 // ── Init ──────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -262,5 +238,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initScrollBehaviour();
   initReveal();
-  initBookingForm();
 });
