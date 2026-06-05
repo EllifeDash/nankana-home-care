@@ -93,7 +93,7 @@
 
           <!-- Form — uses standard HTML5 + main.js handler -->
           <!-- Replace action attr with Formspree / EmailJS endpoint when going live -->
-          <form id="bookingForm" action="#" method="POST" novalidate style="margin-top:28px">
+          <form id="bookingForm" novalidate style="margin-top:28px">
 
             <!-- Patient Information -->
             <h4 style="font-family:var(--sans);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--tx3);margin-bottom:16px">Patient Information</h4>
@@ -246,6 +246,10 @@
 </section>
 
 <!-- ─── FOOTER injected by main.js ─── -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/booking-submit.js"></script>
 
 <script src="js/main.js"></script>
  
