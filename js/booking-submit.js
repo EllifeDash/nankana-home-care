@@ -50,20 +50,18 @@ form?.addEventListener('submit', async e => {
   submitBtn.textContent = 'Sending…';
 
   // ── Build the row ──
-  // `status` defaults to 'pending' in the DB column definition,
-  // but setting it explicitly makes intent clear.
   const appointment = {
-    patient_name: name,
-    phone,
-    age:          document.getElementById('f-age').value     || null,
-    gender:       document.getElementById('f-gender').value  || null,
-    address,
-    service,
-    preferred_date: date,
-    preferred_time: time,
-    notes:        document.getElementById('f-notes').value.trim() || null,
-    status:       'pending',         // awaiting staff action
-    // handled_by intentionally omitted — set by app staff on accept
+    patient_name:      name,
+    patient_phone:     phone,
+    patient_age:       document.getElementById('f-age').value     || null,
+    patient_gender:    document.getElementById('f-gender').value  || null,
+    patient_address:   address,
+    requested_service: service,
+    preferred_date:    date,
+    preferred_time:    time,
+    notes:             document.getElementById('f-notes').value.trim() || null,
+    status:            'pending',
+    admin_comment:     null,
   };
 
   // ── Insert ────────────────────────────
