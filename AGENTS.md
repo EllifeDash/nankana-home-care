@@ -2,22 +2,23 @@
 
 ## Repo at a glance
 
-Zero-framework static site (HTML5 + CSS3 + Vanilla JS). Deployed on Netlify — push to `main` auto-deploys. No build step, no package.json, no tests, no linter, no CI config.
+Zero-framework single-page static site (HTML5 + CSS3 + Vanilla JS). Deployed via GitHub Pages — push to `main` auto-deploys. No build step, no package.json, no tests, no linter.
+
+Part of a 3-tier ecosystem: this is **Tier 1** (public brochure). Supabase credentials are injected via GitHub Actions secrets.
 
 ## Architecture
 
-- **5 HTML files**: `index.html`, `about.html`, `services.html`, `join-us.html`, `booking.html`
-- **`js/main.js`** — classic `<script>`, injects shared header/footer/WhatsApp FAB on every page. Nav active state driven by `<meta name="page">` in each page's `<head>`.
-- **`js/booking-submit.js`** — ES module (`type="module"`), imports Supabase JS client from CDN. Only loaded on `booking.html`. Hardcodes Supabase URL + anon key (public, RLS-protected).
+- **1 HTML file**: `index.html` — single-page brochure (hero, services, booking form)
+- **`js/app.js`** — classic `<script>`, injects shared header/footer/WhatsApp FAB. Handles language toggle (EN/UR), scroll-reveal animations, scroll spy, and Supabase booking form submission. Nav active state driven by scroll position.
 - **`css/style.css`** — Material Design 3–inspired tokens, all in one file.
 
-## Quirks & gotchas
+## Key constraints
 
-- Nav links reference `index.html`. If you rename or restructure pages, update all nav/footer link paths in `main.js`.
-- `booking.html` loads both `main.js` (header/footer injection) and `booking-submit.js` (ES module, form submission to Supabase).
-- Supabase RLS policy required (noted in `booking-submit.js`): `CREATE POLICY "Public can insert appointments" ON public.appointments FOR INSERT TO anon WITH CHECK (true);` The `appointments` table columns inserted by the form: `patient_name`, `phone`, `age`, `gender`, `address`, `service`, `preferred_date`, `preferred_time`, `notes`, `status` (defaults to `'pending'`).
-- Booking form minimum date is set via an inline `<script>` at the bottom of `booking.html`.
+- Supabase credentials are placeholder tokens (`YOUR_SUPABASE_URL`, `YOUR_SUPABASE_ANON_KEY`) replaced at CI time by `.github/workflows/deploy.yml`
+- The `appointments` table in Supabase has RLS: `CREATE POLICY "Public can insert appointments" ON public.appointments FOR INSERT TO anon WITH CHECK (true);`
+- Booking form minimum date is set via inline JS at the bottom of `index.html`
+- Language preference persisted in `localStorage` key `nankana-lang`
 
 ## Commands
 
-No build, test, lint, or typecheck commands exist. Preview locally by opening any `.html` file in a browser or using any static file server.
+No build, test, lint, or typecheck commands. Preview locally by opening `index.html` in a browser or using any static file server.

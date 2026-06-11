@@ -1,56 +1,45 @@
-<div align="center">
+# Nankana Home Care — Public Web Brochure
 
-# 🏥 Nankana Home Care — Public Website
+**Tier 1** of the Nankana Home Care three-tier ecosystem.
 
-**The official, public-facing marketing and reservation website for Nankana Home Care services.**
-
-[![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?style=flat-square&logo=netlify)](https://netlify.com)
-[![Vanilla JS](https://img.shields.io/badge/Frontend-Vanilla%20JS-F7DF1E?style=flat-square&logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Supabase](https://img.shields.io/badge/Backend-Supabase-3ECF8E?style=flat-square&logo=supabase)](https://supabase.com)
-
-</div>
+| Tier | Product | Role |
+|------|---------|------|
+| 1 | **Nankana Home Care** *(this repo)* | Public-facing single-page brochure site with online appointment booking |
+| 2 | [MediAssist Pro PWA](https://github.com/ellifedash/mediassist-pro) | Offline-first patient management app for medical assistants |
+| 3 | [NHC Admin Portal](https://github.com/ellifedash/nhc-admin-portal) | Secure admin dashboard for staff onboarding and magic-link dispatch |
 
 ---
 
-## 📌 Overview_
+## Overview
 
-This repository contains the lightweight, multi-page static marketing website for **Nankana Home Care**. It introduces our medical services to the local community, handles recruitment inquiries, and hosts the public appointment reservation engine that syncs directly with our internal staff platform.
+This repository contains the lightweight, single-page marketing website for Nankana Home Care. It introduces medical services to the local community and hosts the public appointment reservation engine that streams booking data directly into the same Supabase database used by MediAssist Pro and the Admin Portal.
 
-Built with **Vanilla JS** and styled natively using **Material Design 3 tokens**, this site features zero frameworks, zero heavy dependencies, and zero build steps—ensuring lightning-fast loading speeds on mobile data networks.
+Built with Vanilla JS and styled using Material Design 3 tokens — zero frameworks, zero build steps.
 
----
+## Project Structure
 
-## 📂 Project Structure
-
-```text
+```
 nankana-home-care/
-├── index.html          # Home Page (Hero section & trust factors)
-├── about.html          # Who Are We? (Mission & medical team bio)
-├── services.html       # Our Services (Detailed healthcare catalog)
-├── join-us.html        # Join Our Team (Recruitment intake)
-├── booking.html        # Book an Appointment (The patient intake form)
+├── index.html          # Single-page brochure (hero, services, booking form)
 ├── css/
-│   └── style.css       # Core styling & Material Design 3 CSS tokens
-└── js/
-    ├── main.js         # Layout Injector (Injects shared navigation & footer)
-    └── booking-submit.js # Booking Engine (Securely pushes data to Supabase)
-    ✨ Features & Architecture
-Zero-Framework Architecture: Handcrafted with pure semantic HTML5, CSS3, and modern Vanilla ES2022 JavaScript.
+│   └── style.css       # Material Design 3–inspired stylesheet
+├── js/
+│   └── app.js          # Layout injection, language toggle, booking form (Supabase)
+├── .github/
+│   └── workflows/
+│       └── deploy.yml  # GitHub Actions — injects Supabase secrets from repo vars
+├── AGENTS.md           # AI-assisted development instructions
+└── README.md
+```
 
-DRY Component Injection: Navigation menus and footers are dynamically injected across all pages via a lightweight layout script, making global menu updates instant without file duplication.
+## Integration Loop
 
-Direct Database Streaming: The appointment booking form captures patient intake information and streams it securely to our centralized database using an optimized public client interface.
+1. **Patients** book appointments via this site → stored in Supabase `appointments` table
+2. **Medical assistants** (MediAssist Pro) view and manage those bookings in their PWA
+3. **Administrators** (NHC Admin Portal) onboard new staff and send magic links
 
-Production-Grade Security: Locked down via strict Supabase Row-Level Security (RLS) rules. Public anonymous clients possess exclusive INSERT permissions on the appointments table, guaranteeing total patient privacy.
+## Deployment
 
-🚀 Deployment
-The site is built to be deployed on Netlify directly from the main branch.
+Auto-deployed via GitHub Pages. Push to `main` triggers a deploy.
 
-Push updates to GitHub.
-
-Netlify auto-deploys the static assets instantly.
-
-No build steps or runtime compilation required.
-
-📄 License
-This project is licensed under a Proprietary License. All rights reserved.
+Supabase credentials (`SUPABASE_URL`, `SUPABASE_ANON_KEY`) are injected at build time from GitHub Secrets.
