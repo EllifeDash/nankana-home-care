@@ -23,8 +23,8 @@ jobs:
       # SECURE KEY INJECTION: Replaces placeholders in your JS file with your real GitHub Secrets
       - name: Inject Supabase Credentials
         run: |
-          sed -i "s|YOUR_SUPABASE_URL|${{ secrets.SUPABASE_URL }}|g" js/booking-submit.js
-          sed -i "s|YOUR_SUPABASE_ANON_KEY|${{ secrets.SUPABASE_ANON_KEY }}|g" js/booking-submit.js
+          sed -i "s|YOUR_SUPABASE_URL|${{ secrets.SUPABASE_URL }}|g" js/app.js
+          sed -i "s|YOUR_SUPABASE_ANON_KEY|${{ secrets.SUPABASE_ANON_KEY }}|g" js/app.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
