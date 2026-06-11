@@ -563,3 +563,103 @@ p  { color: var(--tx2); }
   .card { padding: 20px 18px; }
   .booking-form-card { padding: 24px 18px; }
 }
+
+/* ════════════════════════════════════════
+   SINGLE-PAGE BROCHURE ADDITIONS
+   ════════════════════════════════════════ */
+
+/* Nav actions (lang switcher + hamburger) */
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+
+.lang-switcher {
+  background: none; border: 1.5px solid rgba(255,255,255,.25);
+  color: rgba(255,255,255,.8); padding: 5px 14px; border-radius: 50px;
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  transition: all var(--dur) var(--ease);
+  line-height: 1.4;
+}
+.lang-switcher:hover { border-color: var(--ac); color: var(--ac); }
+
+/* Dual-language display toggle — Urdu hidden by default */
+.lang-ur { display: none; font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif; line-height: 1.8; }
+body.show-ur .lang-en { display: none; }
+body.show-ur .lang-ur { display: revert; }
+
+/* Urdu font utility */
+.urdu { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif; line-height: 1.8; }
+
+/* Image placeholders */
+.img-placeholder {
+  border-radius: var(--rl);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.img-placeholder svg { width: 64px; height: 64px; stroke: rgba(255,255,255,.5); fill: none; stroke-width: 1.2; }
+.img-16-9 { aspect-ratio: 16/9; }
+.img-1-1 { aspect-ratio: 1/1; }
+.img-placeholder-sm svg { width: 36px; height: 36px; }
+
+/* Hero logo (single-page) */
+.hero-logo { margin-bottom: 24px; }
+.hero-logo .brand-name {
+  font-family: var(--serif); font-size: 2rem; color: #fff;
+  display: inline-flex; align-items: center; gap: 12px;
+}
+.hero-logo .brand-name .lang-ur { font-family: 'Noto Nastaliq Urdu', serif; font-size: 1.8rem; }
+.hero-logo .brand-name em { color: var(--ac); font-style: normal; }
+
+/* About grid */
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+}
+@media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; } }
+
+/* Services brochure grid */
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+}
+@media (max-width: 768px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .services-grid { grid-template-columns: 1fr; } }
+
+.service-card {
+  background: var(--sur); border-radius: var(--rl);
+  border: 1px solid var(--bd); box-shadow: var(--sh);
+  overflow: hidden;
+  transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.service-card:hover { box-shadow: var(--shm); transform: translateY(-4px); }
+.service-card .service-img { border-radius: 0; }
+.service-card .service-img svg { width: 40px; height: 40px; }
+.service-card-body { padding: 20px 18px 24px; text-align: center; }
+.service-card-body h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.service-card-body p { font-size: 13px; color: var(--tx3); line-height: 1.6; }
+
+/* Section background variants */
+.section-mint { background: #E8F8F5; }
+.section-sky { background: #F0F9FF; }
+
+/* Language gate modal */
+.lang-modal {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,.65);
+  display: flex; align-items: center; justify-content: center;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.lang-modal.hidden { display: none; }
+.lang-modal-card {
+  background: var(--sur); border-radius: var(--rxl);
+  padding: 48px 36px; max-width: 420px; width: 90%;
+  text-align: center; box-shadow: var(--shl);
+  animation: modalIn .35s var(--spring);
+}
+@keyframes modalIn { from { opacity: 0; transform: scale(.92) translateY(16px); } to { opacity: 1; transform: none; } }
+.lang-modal-card p { font-size: 1.1rem; font-weight: 600; color: var(--tx); margin-bottom: 28px; }
+.lang-modal-card .lang-ur { font-size: 1.15rem; }
+.lang-modal-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.lang-modal-buttons .btn { min-width: 140px; justify-content: center; }
+.lang-modal-buttons .btn-lang-ur { background: var(--p); color: #fff; font-family: 'Noto Nastaliq Urdu', serif; font-size: 1.15rem; }
+.lang-modal-buttons .btn-lang-ur:hover { background: var(--p2); }
+
+/* Mobile nav active state */
+.nav-mobile a.active { color: #fff; background: rgba(255,255,255,.08); }

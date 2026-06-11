@@ -3,273 +3,372 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="page" content="home"/>
   <meta name="description" content="Nankana Home Care — Professional medical home-visit services across Nankana Sahib. Injections, blood draws, wound care & more, at your doorstep."/>
   <title>Nankana Home Care — Professional Home Medical Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-<!-- ─── HEADER injected by main.js ─── -->
+<!-- ════════════════════════════════════════
+     LANGUAGE GATE MODAL
+     ════════════════════════════════════════ -->
+<div id="langModal" class="lang-modal">
+  <div class="lang-modal-card">
+    <p><span class="lang-en">Please select your preferred language</span><span class="lang-ur" dir="rtl">اپنی زبان منتخب کریں</span></p>
+    <div class="lang-modal-buttons">
+      <button data-lang="en" class="btn btn-primary btn-lg">English</button>
+      <button data-lang="ur" class="btn btn-lg btn-lang-ur">اردو</button>
+    </div>
+  </div>
+</div>
 
-<!-- ══════════════════════════════════
-     HERO — Primary landing moment
-══════════════════════════════════ -->
-<section class="hero">
+<!-- ─── HEADER injected by app.js ─── -->
+<div id="header-slot"></div>
+
+<!-- ════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════ -->
+<section id="hero" class="hero">
   <div class="container hero-content">
-    <span class="section-label">Trusted Home Care · Nankana Sahib</span>
-    <h1>Professional Care,<br/>Right at Your Door</h1>
+    <div class="hero-logo">
+      <div class="nav-logo" style="color:#fff;font-size:2rem;padding:0;background:none;">
+        <div class="nav-logo-icon" style="width:48px;height:48px;border-radius:12px;">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2">
+            <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
+            <path d="M12 8v8M8 12h8"/>
+          </svg>
+        </div>
+        <span class="brand-name">
+          <span class="lang-en">Nankana <em>Home Care</em></span>
+          <span class="lang-ur" dir="rtl">ننکانہ ہوم کیئر</span>
+        </span>
+      </div>
+    </div>
+    <h1>
+      <span class="lang-en">Professional Care,<br/>Right at Your Door</span>
+      <span class="lang-ur" dir="rtl">پیشہ ورانہ نگہداشت،<br/>آپ کی دہلیز پر</span>
+    </h1>
     <p>
-      Qualified medical attendants providing injections, drips, wound care, and
-      more — in the comfort of your home. Available 7 days a week.
+      <span class="lang-en">Qualified medical attendants providing injections, drips, wound care, and more — in the comfort of your home. Available 7 days a week.</span>
+      <span class="lang-ur" dir="rtl">قابل میڈیکل اٹینڈنٹس آپ کے گھر کے آرام میں انجیکشن، ڈرپس، زخموں کی دیکھ بھال اور مزید فراہم کرتے ہیں۔ ہفتے کے 7 دن دستیاب۔</span>
     </p>
     <div class="hero-ctas">
-      <a href="booking.html" class="btn btn-primary btn-lg">
+      <a href="#booking" class="btn btn-primary btn-lg">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Book an Appointment
+        <span class="lang-en">Book an Appointment</span>
+        <span class="lang-ur" dir="rtl">اپوائنٹمنٹ بک کریں</span>
       </a>
-      <a href="services.html" class="btn btn-secondary btn-lg">
-        View Our Services →
+      <a id="heroWhatsApp" href="#" target="_blank" class="btn btn-secondary btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        <span class="lang-en">Chat on WhatsApp</span>
+        <span class="lang-ur" dir="rtl">واٹس ایپ پر بات کریں</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     TRUST BAR — Quick credibility signals
-══════════════════════════════════ -->
+<!-- ════════════════════════════════════════
+     TRUST BAR
+     ════════════════════════════════════════ -->
 <div class="trust-bar">
   <div class="trust-bar-inner">
     <div class="trust-item">
       <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-      <span><strong>500+</strong> Happy Patients</span>
+      <span><strong class="lang-en">500+</strong><strong class="lang-ur" dir="rtl">۵۰۰+</strong> <span class="lang-en">Happy Patients</span><span class="lang-ur" dir="rtl">خوش مریض</span></span>
     </div>
     <div class="trust-item">
       <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      <span><strong>7 Days</strong> a Week, 8am–10pm</span>
+      <span><strong class="lang-en">7 Days</strong><strong class="lang-ur" dir="rtl">۷ دن</strong> <span class="lang-en">a Week, 8am–10pm</span><span class="lang-ur" dir="rtl">ہفتہ، صبح ۸ تا رات ۱۰</span></span>
     </div>
     <div class="trust-item">
       <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <span><strong>Certified</strong> Medical Attendants</span>
+      <span><strong class="lang-en">Certified</strong><strong class="lang-ur" dir="rtl">تصدیق شدہ</strong> <span class="lang-en">Medical Attendants</span><span class="lang-ur" dir="rtl">میڈیکل اٹینڈنٹس</span></span>
     </div>
     <div class="trust-item">
       <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <span><strong>Home Visits</strong> Across Nankana Sahib</span>
+      <span><strong class="lang-en">Home Visits</strong><strong class="lang-ur" dir="rtl">گھر کے دورے</strong> <span class="lang-en">Across Nankana Sahib</span><span class="lang-ur" dir="rtl">ننکانہ صاحب میں</span></span>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════
-     SERVICES PREVIEW — 6-card grid
-══════════════════════════════════ -->
-<section class="section">
+<!-- ════════════════════════════════════════
+     ABOUT US
+     ════════════════════════════════════════ -->
+<section id="about" class="section section-sky">
   <div class="container">
     <div class="text-center mb24 reveal">
-      <span class="section-label">What We Offer</span>
-      <h2>Medical Care Without<br/>the Hospital Trip</h2>
-      <p class="mt8" style="max-width:520px;margin-left:auto;margin-right:auto">
-        From routine injections to complex post-operative care — our trained team handles it all at your home.
-      </p>
+      <span class="section-label">
+        <span class="lang-en">About Us</span>
+        <span class="lang-ur" dir="rtl">ہمارے بارے میں</span>
+      </span>
+      <h2>
+        <span class="lang-en">Trusted Home Healthcare<br/>in Nankana Sahib</span>
+        <span class="lang-ur" dir="rtl">ننکانہ صاحب میں قابل اعتماد<br/>ہوم ہیلتھ کیئر</span>
+      </h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          <span class="lang-en">We are a team of certified medical attendants bringing professional healthcare to your doorstep. From injections to post-operative care, we serve families across Nankana Sahib with compassion and reliability — 7 days a week.</span>
+          <span class="lang-ur" dir="rtl">ہم تصدیق شدہ میڈیکل اٹینڈنٹس کی ایک ٹیم ہیں جو پیشہ ورانہ صحت کی دیکھ بھال آپ کی دہلیز پر لاتے ہیں۔ انجیکشن سے لے کر آپریشن کے بعد کی دیکھ بھال تک، ہم ننکانہ صاحب میں خاندانوں کی خدمت کرتے ہیں۔</span>
+        </p>
+        <a href="#booking" class="btn btn-primary mt16">
+          <span class="lang-en">Book a Visit</span>
+          <span class="lang-ur" dir="rtl">دورہ بک کریں</span>
+        </a>
+      </div>
+      <div class="about-image reveal" data-delay="100">
+        <div class="img-placeholder img-16-9" style="background:linear-gradient(135deg,var(--p),var(--ac))">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
+            <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
+            <path d="M12 8v8M8 12h8"/>
+            <path d="M16 21.5A8.5 8.5 0 0 0 8 21.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     SERVICES — 6-card visual grid
+     ════════════════════════════════════════ -->
+<section id="services" class="section section-mint">
+  <div class="container">
+    <div class="text-center mb24 reveal">
+      <span class="section-label">
+        <span class="lang-en">Our Services</span>
+        <span class="lang-ur" dir="rtl">ہماری خدمات</span>
+      </span>
+      <h2>
+        <span class="lang-en">Medical Care Without<br/>the Hospital Trip</span>
+        <span class="lang-ur" dir="rtl">ہسپتال کے بغیر<br/>طبی نگہداشت</span>
+      </h2>
     </div>
 
-    <div class="grid-3">
-      <!-- Service 1 -->
-      <div class="card svc-card reveal" data-delay="0">
-        <div class="svc-icon" style="background:rgba(0,180,216,.10)">
-          <svg viewBox="0 0 24 24" stroke="var(--ac)" stroke-linecap="round" stroke-linejoin="round">
+    <div class="services-grid">
+      <!-- 1: Injections & IV Drips -->
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-img img-placeholder img-1-1 img-placeholder-sm" style="background:rgba(0,180,216,.12)">
+          <svg viewBox="0 0 24 24" stroke="var(--ac)" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
             <path d="M9 12h6M12 9v6"/><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
           </svg>
         </div>
-        <h3>Injections &amp; IV Drips</h3>
-        <p>Subcutaneous, intramuscular, and IV line setup administered safely at home by trained staff.</p>
+        <div class="service-card-body">
+          <h3><span class="lang-en">Injections &amp; IV Drips</span><span class="lang-ur" dir="rtl">انجیکشن اور ڈرپس</span></h3>
+          <p><span class="lang-en">Safe administration at home by trained medical staff</span><span class="lang-ur" dir="rtl">تربیت یافتہ عملے کے ذریعے گھر پر محفوظ انتظامیہ</span></p>
+        </div>
       </div>
-      <!-- Service 2 -->
-      <div class="card svc-card reveal" data-delay="80">
-        <div class="svc-icon" style="background:rgba(46,196,182,.10)">
-          <svg viewBox="0 0 24 24" stroke="var(--gr)" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- 2: Blood Sample Collection -->
+      <div class="service-card reveal" data-delay="80">
+        <div class="service-img img-placeholder img-1-1 img-placeholder-sm" style="background:rgba(46,196,182,.12)">
+          <svg viewBox="0 0 24 24" stroke="var(--gr)" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
             <path d="M3 3h18v4H3zM3 10h18v4H3zM3 17h18v4H3z"/>
           </svg>
         </div>
-        <h3>Blood Sample Collection</h3>
-        <p>Laboratory-grade blood draws from the comfort of your home with same-day courier to lab.</p>
+        <div class="service-card-body">
+          <h3><span class="lang-en">Blood Collection</span><span class="lang-ur" dir="rtl">خون کے نمونے</span></h3>
+          <p><span class="lang-en">Lab-quality blood draws from your home, same-day courier</span><span class="lang-ur" dir="rtl">آپ کے گھر سے لیب کوالٹی کے خون کے نمونے</span></p>
+        </div>
       </div>
-      <!-- Service 3 -->
-      <div class="card svc-card reveal" data-delay="160">
-        <div class="svc-icon" style="background:rgba(255,159,28,.10)">
-          <svg viewBox="0 0 24 24" stroke="var(--am)" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- 3: Wound Dressing & Care -->
+      <div class="service-card reveal" data-delay="160">
+        <div class="service-img img-placeholder img-1-1 img-placeholder-sm" style="background:rgba(255,159,28,.12)">
+          <svg viewBox="0 0 24 24" stroke="var(--am)" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
             <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/>
           </svg>
         </div>
-        <h3>Wound Dressing &amp; Care</h3>
-        <p>Professional cleaning, dressing, and monitoring of surgical wounds, cuts, and diabetic ulcers.</p>
+        <div class="service-card-body">
+          <h3><span class="lang-en">Wound Dressing</span><span class="lang-ur" dir="rtl">زخم کی ڈریسنگ</span></h3>
+          <p><span class="lang-en">Professional cleaning, dressing and monitoring of wounds</span><span class="lang-ur" dir="rtl">پیشہ ورانہ صفائی، ڈریسنگ اور زخموں کی نگرانی</span></p>
+        </div>
       </div>
-      <!-- Service 4 -->
-      <div class="card svc-card reveal" data-delay="0">
-        <div class="svc-icon" style="background:rgba(0,180,216,.10)">
-          <svg viewBox="0 0 24 24" stroke="var(--ac)" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- 4: Vitals & BP Monitoring -->
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-img img-placeholder img-1-1 img-placeholder-sm" style="background:rgba(0,180,216,.12)">
+          <svg viewBox="0 0 24 24" stroke="var(--ac)" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
             <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
           </svg>
         </div>
-        <h3>Vitals &amp; BP Monitoring</h3>
-        <p>Regular blood pressure, oxygen, blood sugar and temperature checks with documented reports.</p>
+        <div class="service-card-body">
+          <h3><span class="lang-en">Vitals Monitoring</span><span class="lang-ur" dir="rtl">وائٹلز مانیٹرنگ</span></h3>
+          <p><span class="lang-en">Regular BP, O2, blood sugar and temperature checks</span><span class="lang-ur" dir="rtl">باقاعدہ بلڈ پریشر، آکسیجن، شوگر اور درجہ حرارت کی جانچ</span></p>
+        </div>
       </div>
-      <!-- Service 5 -->
-      <div class="card svc-card reveal" data-delay="80">
-        <div class="svc-icon" style="background:rgba(46,196,182,.10)">
-          <svg viewBox="0 0 24 24" stroke="var(--gr)" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- 5: Post-Operative Care -->
+      <div class="service-card reveal" data-delay="80">
+        <div class="service-img img-placeholder img-1-1 img-placeholder-sm" style="background:rgba(46,196,182,.12)">
+          <svg viewBox="0 0 24 24" stroke="var(--gr)" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
           </svg>
         </div>
-        <h3>Post-Operative Care</h3>
-        <p>Full post-surgery recovery support including mobility assistance, medication, and wound management.</p>
+        <div class="service-card-body">
+          <h3><span class="lang-en">Post-Op Care</span><span class="lang-ur" dir="rtl">آپریشن کے بعد کی دیکھ بھال</span></h3>
+          <p><span class="lang-en">Full recovery support after surgery at home</span><span class="lang-ur" dir="rtl">سرجری کے بعد گھر پر مکمل بحالی میں مدد</span></p>
+        </div>
       </div>
-      <!-- Service 6 -->
-      <div class="card svc-card reveal" data-delay="160">
-        <div class="svc-icon" style="background:rgba(255,159,28,.10)">
-          <svg viewBox="0 0 24 24" stroke="var(--am)" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- 6: Medicine Delivery -->
+      <div class="service-card reveal" data-delay="160">
+        <div class="service-img img-placeholder img-1-1 img-placeholder-sm" style="background:rgba(255,159,28,.12)">
+          <svg viewBox="0 0 24 24" stroke="var(--am)" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.5">
             <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
           </svg>
         </div>
-        <h3>Medicine Delivery</h3>
-        <p>Prescription pick-up from nearby pharmacies and delivery direct to your bed, same day.</p>
+        <div class="service-card-body">
+          <h3><span class="lang-en">Medicine Delivery</span><span class="lang-ur" dir="rtl">دوائی کی ترسیل</span></h3>
+          <p><span class="lang-en">Prescription pickup and same-day delivery to your home</span><span class="lang-ur" dir="rtl">نسخے کی دوائی لے کر آپ کے گھر تک ترسیل</span></p>
+        </div>
       </div>
-    </div>
-
-    <div class="text-center mt40 reveal">
-      <a href="services.html" class="btn btn-outline">View All Services →</a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     STATS ROW
-══════════════════════════════════ -->
-<div style="background:var(--p);padding:56px 0">
-  <div class="container">
-    <div class="grid-4">
-      <div class="stat-card reveal" style="background:transparent;border:none;box-shadow:none">
-        <div class="sv" style="color:var(--ac)">500+</div>
-        <div class="sl" style="color:rgba(255,255,255,.5)">Patients Served</div>
-      </div>
-      <div class="stat-card reveal" data-delay="80" style="background:transparent;border:none;box-shadow:none">
-        <div class="sv" style="color:var(--ac)">3+</div>
-        <div class="sl" style="color:rgba(255,255,255,.5)">Years of Service</div>
-      </div>
-      <div class="stat-card reveal" data-delay="160" style="background:transparent;border:none;box-shadow:none">
-        <div class="sv" style="color:var(--ac)">12</div>
-        <div class="sl" style="color:rgba(255,255,255,.5)">Medical Services</div>
-      </div>
-      <div class="stat-card reveal" data-delay="240" style="background:transparent;border:none;box-shadow:none">
-        <div class="sv" style="color:var(--ac)">98%</div>
-        <div class="sl" style="color:rgba(255,255,255,.5)">Satisfaction Rate</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════
-     HOW IT WORKS — 3-step process
-══════════════════════════════════ -->
-<section class="section">
+<!-- ════════════════════════════════════════
+     BOOKING FORM
+     ════════════════════════════════════════ -->
+<section id="booking" class="section">
   <div class="container">
     <div class="text-center mb24 reveal">
-      <span class="section-label">Simple &amp; Fast</span>
-      <h2>How It Works</h2>
+      <span class="section-label">
+        <span class="lang-en">Book an Appointment</span>
+        <span class="lang-ur" dir="rtl">اپوائنٹمنٹ بک کریں</span>
+      </span>
+      <h2>
+        <span class="lang-en">Book a Home Visit</span>
+        <span class="lang-ur" dir="rtl">گھر کا دورہ بک کریں</span>
+      </h2>
+      <p class="mt8" style="max-width:480px;margin-left:auto;margin-right:auto">
+        <span class="lang-en">Fill in the form below — we confirm within 30 minutes</span>
+        <span class="lang-ur" dir="rtl">نیچے دیے گئے فارم کو پُر کریں — ہم ۳۰ منٹ میں تصدیق کر دیتے ہیں</span>
+      </p>
     </div>
-    <div class="grid-3">
-      <div class="how-step reveal" data-delay="0">
-        <div class="step-num">1</div>
-        <div>
-          <h4>Book an Appointment</h4>
-          <p>Fill out our simple booking form online or call/WhatsApp us directly. Choose your service, date, and time.</p>
-        </div>
-      </div>
-      <div class="how-step reveal" data-delay="100">
-        <div class="step-num">2</div>
-        <div>
-          <h4>We Confirm &amp; Dispatch</h4>
-          <p>Our coordinator confirms your slot within 30 minutes and dispatches the nearest available attendant.</p>
-        </div>
-      </div>
-      <div class="how-step reveal" data-delay="200">
-        <div class="step-num">3</div>
-        <div>
-          <h4>Care at Your Doorstep</h4>
-          <p>Your certified attendant arrives on time with all equipment. You receive a care report after every visit.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════
-     TESTIMONIALS — 3 cards
-══════════════════════════════════ -->
-<section class="section-sm" style="background:var(--sur2)">
-  <div class="container">
-    <div class="text-center mb24 reveal">
-      <span class="section-label">Patient Stories</span>
-      <h2>Trusted by Families<br/>Across Nankana Sahib</h2>
-    </div>
-    <div class="grid-3">
-      <div class="testimonial-card reveal" data-delay="0">
-        <div class="quote-mark">"</div>
-        <p>My father needed daily injections after surgery. The team arrived on time every single day and were incredibly professional and gentle. Highly recommended.</p>
-        <div class="author">
-          <div class="author-av">A</div>
-          <div>
-            <div class="author-name">Ahmad Raza</div>
-            <div class="author-meta">Nankana Sahib</div>
+    <div class="booking-form-card reveal">
+      <form id="bookingForm" novalidate>
+        <div class="form-fg">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label><span class="lang-en">Full Name</span><span class="lang-ur" dir="rtl">مکمل نام</span> *</label>
+            <input type="text" id="f-name" name="patient_name" required
+                   data-en-placeholder="e.g. Muhammad Ali"
+                   data-ur-placeholder="مثلاً محمد علی">
+          </div>
+          <!-- Phone -->
+          <div class="form-group">
+            <label><span class="lang-en">Phone / WhatsApp</span><span class="lang-ur" dir="rtl">فون / واٹس ایپ</span> *</label>
+            <input type="tel" id="f-phone" name="patient_phone" required
+                   data-en-placeholder="+92 300 0000000"
+                   data-ur-placeholder="+۹۲ ۳۰۰ ۰۰۰۰۰۰۰">
+          </div>
+          <!-- Age -->
+          <div class="form-group">
+            <label><span class="lang-en">Patient Age</span><span class="lang-ur" dir="rtl">مریض کی عمر</span></label>
+            <input type="number" id="f-age" name="patient_age" min="0" max="120"
+                   data-en-placeholder="Years"
+                   data-ur-placeholder="سال">
+          </div>
+          <!-- Gender -->
+          <div class="form-group">
+            <label><span class="lang-en">Gender</span><span class="lang-ur" dir="rtl">جنس</span></label>
+            <select id="f-gender" name="patient_gender">
+              <option value="" data-en="Select" data-ur="منتخب کریں"></option>
+              <option value="Male" data-en="Male" data-ur="مرد">Male</option>
+              <option value="Female" data-en="Female" data-ur="عورت">Female</option>
+              <option value="Prefer not to say" data-en="Prefer not to say" data-ur="نہیں بتانا چاہتے">Prefer not to say</option>
+            </select>
+          </div>
+          <!-- Address -->
+          <div class="form-group s2">
+            <label><span class="lang-en">Home Address</span><span class="lang-ur" dir="rtl">گھر کا پتہ</span> *</label>
+            <input type="text" id="f-address" name="patient_address" required
+                   data-en-placeholder="Street, mohalla, nearest landmark..."
+                   data-ur-placeholder="گلی، محلہ، قریبی نشان...">
+          </div>
+          <!-- Service -->
+          <div class="form-group s2">
+            <label><span class="lang-en">Service Required</span><span class="lang-ur" dir="rtl">مطلوبہ سروس</span> *</label>
+            <select id="f-service" name="requested_service" required>
+              <option value="" data-en="-- Select Service --" data-ur="-- سروس منتخب کریں --"></option>
+              <optgroup label="Most Common" data-en="Most Common" data-ur="عام خدمات">
+                <option value="Injection (IM/SC)" data-en="Injection (IM/SC)" data-ur="انجیکشن (آئی ایم/ایس سی)">Injection (IM/SC)</option>
+                <option value="IV Drip Setup & Monitoring" data-en="IV Drip Setup &amp; Monitoring" data-ur="آئی وی ڈرپ سیٹ اپ اور مانیٹرنگ">IV Drip Setup &amp; Monitoring</option>
+                <option value="Blood Sample Collection" data-en="Blood Sample Collection" data-ur="خون کے نمونے لینا">Blood Sample Collection</option>
+                <option value="Wound Dressing & Care" data-en="Wound Dressing &amp; Care" data-ur="زخم کی ڈریسنگ اور دیکھ بھال">Wound Dressing &amp; Care</option>
+                <option value="Vitals Monitoring" data-en="Vitals Monitoring" data-ur="وائٹلز مانیٹرنگ">Vitals Monitoring</option>
+                <option value="Blood Sugar Check" data-en="Blood Sugar Check" data-ur="بلڈ شوگر چیک">Blood Sugar Check</option>
+              </optgroup>
+              <optgroup label="Specialised" data-en="Specialised" data-ur="خصوصی خدمات">
+                <option value="Post-Operative Home Care" data-en="Post-Operative Home Care" data-ur="آپریشن کے بعد گھر کی دیکھ بھال">Post-Operative Home Care</option>
+                <option value="Elderly/Palliative Care" data-en="Elderly/Palliative Care" data-ur="بزرگوں کی دیکھ بھال">Elderly/Palliative Care</option>
+                <option value="ECG at Home" data-en="ECG at Home" data-ur="گھر پر ای سی جی">ECG at Home</option>
+                <option value="First Aid & Emergency Response" data-en="First Aid &amp; Emergency Response" data-ur="ابتدائی طبی امداد">First Aid &amp; Emergency Response</option>
+                <option value="Medicine Delivery" data-en="Medicine Delivery" data-ur="دوائی کی ترسیل">Medicine Delivery</option>
+                <option value="Tele-Health Referral" data-en="Tele-Health Referral" data-ur="ٹیلی ہیلتھ ریفرل">Tele-Health Referral</option>
+              </optgroup>
+              <option value="other" data-en="Other / Not Listed (describe in notes)" data-ur="دیگر / درج نہیں (نوٹس میں بتائیں)">Other / Not Listed (describe in notes)</option>
+            </select>
+          </div>
+          <!-- Date -->
+          <div class="form-group">
+            <label><span class="lang-en">Preferred Date</span><span class="lang-ur" dir="rtl">ترجیحی تاریخ</span> *</label>
+            <input type="date" id="f-date" name="preferred_date" required>
+          </div>
+          <!-- Time -->
+          <div class="form-group">
+            <label><span class="lang-en">Preferred Time</span><span class="lang-ur" dir="rtl">ترجیحی وقت</span> *</label>
+            <input type="time" id="f-time" name="preferred_time" required>
+          </div>
+          <!-- Notes -->
+          <div class="form-group s2">
+            <label><span class="lang-en">Additional Notes</span><span class="lang-ur" dir="rtl">اضافی نوٹس</span></label>
+            <textarea id="f-notes" name="notes"
+                      data-en-placeholder="Describe condition, allergies, special requests..."
+                      data-ur-placeholder="مریض کی حالت، الرجی، خصوصی درخواستیں بتائیں..."></textarea>
           </div>
         </div>
-      </div>
-      <div class="testimonial-card reveal" data-delay="100">
-        <div class="quote-mark">"</div>
-        <p>Getting blood samples collected from home saved my elderly mother so much stress. The attendant was skilled and the results were delivered to the lab same day.</p>
-        <div class="author">
-          <div class="author-av">S</div>
-          <div>
-            <div class="author-name">Sadia Bibi</div>
-            <div class="author-meta">Sheikhupura Road</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card reveal" data-delay="200">
-        <div class="quote-mark">"</div>
-        <p>After my wife's C-section, the wound dressing service was a blessing. Professional, hygienic, and always on time. We will use Nankana Home Care again.</p>
-        <div class="author">
-          <div class="author-av">U</div>
-          <div>
-            <div class="author-name">Usman Haider</div>
-            <div class="author-meta">Sangla Hill</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════
-     CTA BANNER — Final conversion block
-══════════════════════════════════ -->
-<section class="section">
-  <div class="container reveal">
-    <div class="cta-banner">
-      <h2>Ready to Book a Home Visit?</h2>
-      <p>Appointments available 7 days a week, 8am to 10pm. Same-day visits often available.</p>
-      <div class="cta-buttons">
-        <a href="booking.html" class="btn btn-primary btn-lg">Book Now — It's Easy</a>
-        <a href="https://wa.me/923000000000" target="_blank" class="btn btn-secondary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          Chat on WhatsApp
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:18px 36px;font-size:1.1rem;margin-top:24px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          <span class="lang-en">Submit Appointment Request</span>
+          <span class="lang-ur" dir="rtl">اپوائنٹمنٹ کی درخواست جمع کروائیں</span>
+        </button>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3><span class="lang-en">Request Received!</span><span class="lang-ur" dir="rtl">درخواست موصول ہوگئی!</span></h3>
+        <p style="margin-bottom:20px">
+          <span class="lang-en">We will confirm your appointment within 30 minutes via phone or WhatsApp.</span>
+          <span class="lang-ur" dir="rtl">ہم ۳۰ منٹ میں آپ کی اپوائنٹمنٹ کی تصدیق فون یا واٹس ایپ پر کر دیں گے۔</span>
+        </p>
+        <p style="font-size:14px;color:var(--tx3);margin-bottom:24px">
+          <span class="lang-en">Need help? Call us at</span>
+          <span class="lang-ur" dir="rtl">مدد چاہیے؟ ہمیں کال کریں</span>
+          <a href="tel:+923240096098" style="color:var(--ac);font-weight:700;white-space:nowrap">+92 324 0096098</a>
+        </p>
+        <a href="#hero" class="btn btn-outline">
+          <span class="lang-en">← Back to Home</span>
+          <span class="lang-ur" dir="rtl">← ہوم پیج پر واپس جائیں</span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── FOOTER injected by main.js ─── -->
+<!-- ─── FOOTER injected by app.js ─── -->
+<div id="footer-slot"></div>
 
-<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
