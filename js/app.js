@@ -11,7 +11,8 @@ const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Hello%2C%20I%20want%
 const SUPABASE_URL = 'YOUR_SUPABASE_URL';
 const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
 
-const _sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let _sb = null;
+try { _sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY); } catch (_) {}
 
 // ── HTML Templates ─────────────────────────
 
@@ -20,10 +21,7 @@ const HEADER_HTML = `
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">
       <div class="nav-logo-icon">
-        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2">
-          <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
-          <path d="M12 8v8M8 12h8"/>
-        </svg>
+        <img src="assets/main_icon.png" alt="Nankana Home Care" style="width:100%;height:100%;object-fit:contain;">
       </div>
       <span class="lang-en">Nankana <em>Home Care</em></span>
       <span class="lang-ur" dir="rtl">ننکانہ ہوم کیئر</span>
@@ -64,10 +62,7 @@ const FOOTER_HTML = `
       <div class="footer-brand">
         <a href="#hero" class="nav-logo">
           <div class="nav-logo-icon">
-            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="2">
-              <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
-              <path d="M12 8v8M8 12h8"/>
-            </svg>
+            <img src="assets/main_icon.png" alt="Nankana Home Care" style="width:100%;height:100%;object-fit:contain;">
           </div>
           <span class="lang-en">Nankana <em>Home Care</em></span>
           <span class="lang-ur" dir="rtl">ننکانہ ہوم کیئر</span>
@@ -94,7 +89,7 @@ const FOOTER_HTML = `
         </div>
         <div class="footer-contact-item">
           <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <span>info@nankanacare.pk</span>
+          <span>aeikay99+nhc@gmail.com</span>
         </div>
         <div class="footer-contact-item">
           <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -127,27 +122,31 @@ let currentLang = 'en';
 function initLanguageGate() {
   const modal = document.getElementById('langModal');
   const toggle = document.getElementById('langToggle');
-  const saved = localStorage.getItem('nankana-lang');
 
-  if (saved === 'en' || saved === 'ur') {
-    modal.classList.add('hidden');
-    applyLanguage(saved);
-  }
-
-  modal.querySelectorAll('[data-lang]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      localStorage.setItem('nankana-lang', lang);
+  try {
+    const saved = localStorage.getItem('nankana-lang');
+    if (saved === 'en' || saved === 'ur') {
       modal.classList.add('hidden');
-      applyLanguage(lang);
-    });
+      applyLanguage(saved);
+    }
+  } catch (_) {}
+
+  modal.addEventListener('click', e => {
+    const btn = e.target.closest('[data-lang]');
+    if (!btn) return;
+    const lang = btn.dataset.lang;
+    try { localStorage.setItem('nankana-lang', lang); } catch (_) {}
+    modal.classList.add('hidden');
+    applyLanguage(lang);
   });
 
-  toggle.addEventListener('click', () => {
-    const next = currentLang === 'en' ? 'ur' : 'en';
-    localStorage.setItem('nankana-lang', next);
-    applyLanguage(next);
-  });
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const next = currentLang === 'en' ? 'ur' : 'en';
+      try { localStorage.setItem('nankana-lang', next); } catch (_) {}
+      applyLanguage(next);
+    });
+  }
 }
 
 function applyLanguage(lang) {
@@ -314,6 +313,16 @@ function initBookingForm() {
       status: 'pending',
       admin_comment: null,
     };
+
+    if (!_sb) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = origLabel;
+      const msg = currentLang === 'ur'
+        ? 'کچھ غلط ہو گیا۔ براہ کرم دوبارہ کوشش کریں یا ہمیں براہ راست کال کریں۔'
+        : 'Something went wrong. Please try again or call us directly.';
+      alert(msg);
+      return;
+    }
 
     const { error } = await _sb
       .from('appointments')
