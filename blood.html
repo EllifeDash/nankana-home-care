@@ -642,7 +642,7 @@
         return;
       }
       container.innerHTML = data.matches.map(function(donor) {
-        return '<div class="blood-result-row"><div class="donor-info"><span class="donor-name">' + donor.name + '</span><span class="donor-loc">📍 ' + (donor.location || 'Nankana Sahib Area') + '</span></div><a href="tel:' + donor.mobile + '" class="blood-dialer">📞 Contact</a></div>';
+        return '<div class="blood-result-row"><div class="donor-info"><span class="donor-name">' + donor.name + '</span><span class="donor-loc">📍 ' + (donor.location || 'Nankana Sahib Area') + '</span></div><a href="https://wa.me/92' + donor.mobile.replace(/^92/, '') + '" target="_blank" class="blood-dialer">💬 WhatsApp</a></div>';
       }).join('');
     })
     .catch(function(err) {
@@ -701,7 +701,7 @@
         return;
       }
       container.innerHTML = '<p style="font-size:13px;color:#6c757d;text-align:center;margin-bottom:12px;">📍 Emergency location recorded: ' + location + '</p>' + data.matches.map(function(donor) {
-        return '<div class="blood-result-row"><div class="donor-info"><span class="donor-name">' + donor.name + '</span><span class="donor-loc">📍 ' + (donor.location || 'Nankana Sahib Area') + '</span></div><a href="tel:' + donor.mobile + '" class="blood-dialer">📞 Contact</a></div>';
+        return '<div class="blood-result-row"><div class="donor-info"><span class="donor-name">' + donor.name + '</span><span class="donor-loc">📍 ' + (donor.location || 'Nankana Sahib Area') + '</span></div><a href="https://wa.me/92' + donor.mobile.replace(/^92/, '') + '" target="_blank" class="blood-dialer">💬 WhatsApp</a></div>';
       }).join('');
     })
     .catch(function(err) {

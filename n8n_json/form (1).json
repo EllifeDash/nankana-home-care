@@ -162,7 +162,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://pregnancy-footpad-wince.ngrok-free.dev/api/donors/register",
+        "url": "http://localhost:3000/api/donors/register",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
