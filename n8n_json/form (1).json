@@ -5,7 +5,7 @@
       "parameters": {
         "httpMethod": "POST",
         "path": "nhc-donor-registration",
-        "responseMode": "lastNode",
+        "responseMode": "onReceived",
         "responseData": "allEntries",
         "options": {}
       },
