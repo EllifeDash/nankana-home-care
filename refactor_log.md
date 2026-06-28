@@ -89,3 +89,21 @@ Date: 2026-06-11
 | Files edited | 5 |
 | Files deleted | 5 |
 | Files created | 1 (this log) |
+
+---
+
+## Entry 2 — 2026-06-24 — `blood.html` Enhancement Sweep
+
+### Changed
+- **`blood.html`** — rewrote to reference-implemented Volunteer Blood Donation System:
+  - **CSS:** Replaced `.blood-alert` with `.alert-box` + `.error-hint` classes; replaced custom `.blood-modal-*` with reference `.modal-overlay` / `.modal-card` / `.modal-flex` / `.btn-secondary` styles with blur backdrop and slide-in animation
+  - **Age Gate:** Enforced 18–60 validation with custom polite rejection message
+  - **Geofence Filter:** Replaced hardcoded keyword check with dictionary-driven validation — loads `dictionary/nankana_sahib_address_dictionary.json` at runtime, normalizes input per `normalization_rules` (lowercase, strip punctuation, collapse whitespace, remove common prefixes), and matches against `flat_keywords` (≈300 entries: all tehsils, UCs, villages, landmarks, Urdu aliases). Falls back to basic `nankana/nns/nks` check on fetch failure. `nns` and `nks` always accepted.
+  - **Affirmation Modal:** Blurry backdrop modal (`.modal-overlay.active`) intercepts form submit; Cancel clears `pendingPayload`; "❤️ I Affirm &amp; Register" fires `POST /donors/register` with "Securing cloud transaction..." status
+  - **Search flow:** Valid dropdown areas → instant search (no modal). "Other" selection → opens "📍 Emergency Location Required" modal to capture emergency address (displayed in results as a note, not sent to API)
+  - **Dropdown areas:** Updated to: Nankana Sahib City, Shahkot, Sangal Hill, Warburton, Bucheki, More Khunda, Mangtanwala, Faizabad, Syedwala, + Other
+  - **Result cards:** Show donor name, location (📍 prefix), 📞 Contact tel link
+  - All theme tokens use `--blood` / `#e63946` brand color
+
+### Files scanned
+- `blood.html` (before/after review) — no dead code, all changes targeted

@@ -20,11 +20,13 @@ Built with Vanilla JS and styled using Material Design 3 tokens — zero framewo
 
 ```
 nankana-home-care/
-├── index.html          # Single-page brochure (hero, services, booking form)
+├── index.html          # Single-page brochure (hero, services, booking form, blood teaser)
+├── blood.html          # Volunteer Blood Donation portal (standalone, no build step)
 ├── css/
 │   └── style.css       # Material Design 3–inspired stylesheet
 ├── js/
 │   └── app.js          # Layout injection, language toggle, booking form (Supabase)
+├── assets/             # Images and media assets
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml  # GitHub Actions — injects Supabase secrets from repo vars
@@ -37,6 +39,15 @@ nankana-home-care/
 1. **Patients** book appointments via this site → stored in Supabase `appointments` table
 2. **Medical assistants** (MediAssist Pro) view and manage those bookings in their PWA
 3. **Administrators** (NHC Admin Portal) onboard new staff and send magic links
+
+## Blood Donation Portal
+
+The `blood.html` page is a standalone volunteer blood bank system with two functions:
+
+1. **Donor Registration** — submits to `POST /api/donors/register` on an external Express/Google Sheets backend
+2. **Emergency Matching** — queries `POST /api/donors/match` and displays verified donors with tap-to-call dialer
+
+**Configuration:** Update `API_BASE` in `blood.html` (line ~205) to point to the deployed backend before going live.
 
 ## Deployment
 

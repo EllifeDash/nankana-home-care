@@ -1,0 +1,2649 @@
+{
+  "meta": {
+    "generated_for": "website address validation",
+    "scope": "District Nankana Sahib, Punjab, Pakistan",
+    "notes": [
+      "Use this as an allowlist/normalization source, not as a full postal database.",
+      "Union councils are listed at district level because publicly accessible sources did not provide a clean official tehsil-to-UC mapping in extractable text."
+    ]
+  },
+  "district": {
+    "canonical_name": "District Nankana Sahib",
+    "aliases": [
+      "Nankana Sahib",
+      "District Nankana Sahib",
+      "Nankana",
+      "Nankana Sahib District",
+      "ضلع ننکانہ صاحب",
+      "ننکانہ صاحب",
+      "ننکانہ"
+    ],
+    "province": "Punjab, Pakistan",
+    "administrative_counts": {
+      "tehsils": 3,
+      "union_councils": 65,
+      "villages": 414
+    }
+  },
+  "tehsils": [
+    {
+      "canonical_name": "Nankana Sahib",
+      "type": "tehsil",
+      "aliases": [
+        "Nankana",
+        "Nankana Sahib",
+        "ننکانہ",
+        "ننکانہ صاحب"
+      ]
+    },
+    {
+      "canonical_name": "Shahkot",
+      "type": "tehsil",
+      "aliases": [
+        "Shah Kot",
+        "Shahkot",
+        "شاہکوٹ"
+      ]
+    },
+    {
+      "canonical_name": "Sangla Hill",
+      "type": "tehsil",
+      "aliases": [
+        "Sangla",
+        "Sangla Hill",
+        "سانگلہ ہل"
+      ]
+    }
+  ],
+  "municipal_and_town_areas": [
+    {
+      "type": "municipal committee",
+      "canonical_name": "Municipal Committee, Nankana Sahib",
+      "aliases": [
+        "Nankana Sahib MC",
+        "MC Nankana Sahib",
+        "Municipal Committee Nankana Sahib"
+      ]
+    },
+    {
+      "type": "municipal committee",
+      "canonical_name": "Municipal Committee, Shahkot",
+      "aliases": [
+        "Shahkot MC",
+        "MC Shahkot",
+        "Municipal Committee Shahkot"
+      ]
+    },
+    {
+      "type": "municipal committee",
+      "canonical_name": "Municipal Committee, Sangla Hill",
+      "aliases": [
+        "Sangla Hill MC",
+        "MC Sangla Hill",
+        "Municipal Committee Sangla Hill"
+      ]
+    },
+    {
+      "type": "town committee",
+      "canonical_name": "Town Committee, Warburton",
+      "aliases": [
+        "Warburton TC",
+        "Town Committee Warburton",
+        "Warburton"
+      ]
+    },
+    {
+      "type": "town committee",
+      "canonical_name": "Town Committee, Mor Khunda",
+      "aliases": [
+        "Mor Khunda TC",
+        "Town Committee Mor Khunda",
+        "More Khunda",
+        "Mor Khunda"
+      ]
+    },
+    {
+      "type": "town committee",
+      "canonical_name": "Town Committee, Syedwala",
+      "aliases": [
+        "Seyedwala",
+        "Syed Wala",
+        "Syedwala TC",
+        "Town Committee Syedwala"
+      ]
+    }
+  ],
+  "union_councils": [
+    {
+      "uc_no": 1,
+      "canonical_name": "Marh Balochan",
+      "aliases": [
+        "Marh Balochan"
+      ]
+    },
+    {
+      "uc_no": 2,
+      "canonical_name": "Chak No.28 RB Longowal",
+      "aliases": [
+        "Longowal",
+        "Chak 28 RB",
+        "28 RB Longowal",
+        "28/RB Longowal",
+        "Chak 28 RB Longowal",
+        "Chak No28 RB Longowal",
+        "Chak No 28 RB Longowal",
+        "Chak No.28 RB Longowal",
+        "Chak No. 28 RB Longowal"
+      ]
+    },
+    {
+      "uc_no": 3,
+      "canonical_name": "Chak No.113 RB Bado Malli",
+      "aliases": [
+        "Bado Malli",
+        "Chak 113 RB",
+        "113 RB Bado Malli",
+        "113/RB Bado Malli",
+        "Chak 113 RB Bado Malli",
+        "Chak No113 RB Bado Malli",
+        "Chak No 113 RB Bado Malli",
+        "Chak No.113 RB Bado Malli",
+        "Chak No. 113 RB Bado Malli"
+      ]
+    },
+    {
+      "uc_no": 4,
+      "canonical_name": "Chak No.122/RB Phanodrian",
+      "aliases": [
+        "Pandorian",
+        "Phanodrian",
+        "122 /RB Phanodrian",
+        "Chak 122 RB Pandorian",
+        "Chak 122 RB Phanodrian",
+        "Chak 122 /RB Phanodrian",
+        "Chak No122 RB Phanodrian",
+        "Chak No.122/RB Phanodrian",
+        "Chak No 122 /RB Phanodrian",
+        "Chak No. 122 /RB Phanodrian"
+      ]
+    },
+    {
+      "uc_no": 5,
+      "canonical_name": "Chak No.119 RB Bhulilar",
+      "aliases": [
+        "Bhulilar",
+        "Chak 119 RB",
+        "119 RB Bhulilar",
+        "119/RB Bhulilar",
+        "Chak 119 RB Bhulilar",
+        "Chak No119 RB Bhulilar",
+        "Chak No 119 RB Bhulilar",
+        "Chak No.119 RB Bhulilar",
+        "Chak No. 119 RB Bhulilar"
+      ]
+    },
+    {
+      "uc_no": 6,
+      "canonical_name": "Chak No.118/RB Chahur Muslim",
+      "aliases": [
+        "118 /RB Chahur Muslim",
+        "Chak 118 /RB Chahur Muslim",
+        "Chak No118 RB Chahur Muslim",
+        "Chak No.118/RB Chahur Muslim",
+        "Chak No 118 /RB Chahur Muslim",
+        "Chak No. 118 /RB Chahur Muslim"
+      ]
+    },
+    {
+      "uc_no": 7,
+      "canonical_name": "Chak No.45/RB Marar",
+      "aliases": [
+        "45 /RB Marar",
+        "Chak 45 /RB Marar",
+        "Chak No45 RB Marar",
+        "Chak No.45/RB Marar",
+        "Chak No 45 /RB Marar",
+        "Chak No. 45 /RB Marar"
+      ]
+    },
+    {
+      "uc_no": 8,
+      "canonical_name": "Chak No.41/RB Marar Khurd",
+      "aliases": [
+        "41 /RB Marar Khurd",
+        "Chak 41 /RB Marar Khurd",
+        "Chak No41 RB Marar Khurd",
+        "Chak No.41/RB Marar Khurd",
+        "Chak No 41 /RB Marar Khurd",
+        "Chak No. 41 /RB Marar Khurd"
+      ]
+    },
+    {
+      "uc_no": 9,
+      "canonical_name": "Chak No.292/RB Jhuggian",
+      "aliases": [
+        "292 /RB Jhuggian",
+        "Chak 292 /RB Jhuggian",
+        "Chak No292 RB Jhuggian",
+        "Chak No.292/RB Jhuggian",
+        "Chak No 292 /RB Jhuggian",
+        "Chak No. 292 /RB Jhuggian"
+      ]
+    },
+    {
+      "uc_no": 10,
+      "canonical_name": "Chak No.25RB Sathiali Kalan",
+      "aliases": [
+        "Chak 25 RB",
+        "Sathiali Kalan",
+        "Sathyali Kalan",
+        "25 RB Sathiali Kalan",
+        "25/RB Sathiali Kalan",
+        "Chak 25 RB Sathiali Kalan",
+        "Chak No25RB Sathiali Kalan",
+        "Chak No.25RB Sathiali Kalan",
+        "Chak No 25 RB Sathiali Kalan",
+        "Chak No. 25 RB Sathiali Kalan"
+      ]
+    },
+    {
+      "uc_no": 11,
+      "canonical_name": "Chak No.49 RB Kiriwala",
+      "aliases": [
+        "Kiriwala",
+        "Chak 49 RB",
+        "49 RB Kiriwala",
+        "49/RB Kiriwala",
+        "Chak 49 RB Kiriwala",
+        "Chak No49 RB Kiriwala",
+        "Chak No 49 RB Kiriwala",
+        "Chak No.49 RB Kiriwala",
+        "Chak No. 49 RB Kiriwala"
+      ]
+    },
+    {
+      "uc_no": 12,
+      "canonical_name": "Chak No.38/RB Nizam Pur",
+      "aliases": [
+        "38 /RB Nizam Pur",
+        "Chak 38 /RB Nizam Pur",
+        "Chak No38 RB Nizam Pur",
+        "Chak No.38/RB Nizam Pur",
+        "Chak No 38 /RB Nizam Pur",
+        "Chak No. 38 /RB Nizam Pur"
+      ]
+    },
+    {
+      "uc_no": 13,
+      "canonical_name": "Chak No.82/RB Rasulpur Arian",
+      "aliases": [
+        "82 /RB Rasulpur Arian",
+        "Chak 82 /RB Rasulpur Arian",
+        "Chak No82 RB Rasulpur Arian",
+        "Chak No.82/RB Rasulpur Arian",
+        "Chak No 82 /RB Rasulpur Arian",
+        "Chak No. 82 /RB Rasulpur Arian"
+      ]
+    },
+    {
+      "uc_no": 14,
+      "canonical_name": "Chak No.44/RB Kotla Kahlwan",
+      "aliases": [
+        "44 /RB Kotla Kahlwan",
+        "Chak 44 /RB Kotla Kahlwan",
+        "Chak No44 RB Kotla Kahlwan",
+        "Chak No.44/RB Kotla Kahlwan",
+        "Chak No 44 /RB Kotla Kahlwan",
+        "Chak No. 44 /RB Kotla Kahlwan"
+      ]
+    },
+    {
+      "uc_no": 15,
+      "canonical_name": "Chak No.168 RB Karkan",
+      "aliases": [
+        "Karkan",
+        "Chak 168 RB",
+        "168 RB Karkan",
+        "168/RB Karkan",
+        "Chak 168 RB Karkan",
+        "Chak No168 RB Karkan",
+        "Chak No 168 RB Karkan",
+        "Chak No.168 RB Karkan",
+        "Chak No. 168 RB Karkan"
+      ]
+    },
+    {
+      "uc_no": 16,
+      "canonical_name": "Chak No.175/RB Wali Pur Bura",
+      "aliases": [
+        "175 /RB Wali Pur Bura",
+        "Chak 175 /RB Wali Pur Bura",
+        "Chak No175 RB Wali Pur Bura",
+        "Chak No.175/RB Wali Pur Bura",
+        "Chak No 175 /RB Wali Pur Bura",
+        "Chak No. 175 /RB Wali Pur Bura"
+      ]
+    },
+    {
+      "uc_no": 17,
+      "canonical_name": "Chak No.176/RB Panwan",
+      "aliases": [
+        "176 /RB Panwan",
+        "Chak 176 /RB Panwan",
+        "Chak No176 RB Panwan",
+        "Chak No.176/RB Panwan",
+        "Chak No 176 /RB Panwan",
+        "Chak No. 176 /RB Panwan"
+      ]
+    },
+    {
+      "uc_no": 18,
+      "canonical_name": "Chak No.179/RB Nodha",
+      "aliases": [
+        "179 /RB Nodha",
+        "Chak 179 /RB Nodha",
+        "Chak No179 RB Nodha",
+        "Chak No.179/RB Nodha",
+        "Chak No 179 /RB Nodha",
+        "Chak No. 179 /RB Nodha"
+      ]
+    },
+    {
+      "uc_no": 19,
+      "canonical_name": "Chak No.180/RB Nathuwala",
+      "aliases": [
+        "180 /RB Nathuwala",
+        "Chak 180 /RB Nathuwala",
+        "Chak No180 RB Nathuwala",
+        "Chak No.180/RB Nathuwala",
+        "Chak No 180 /RB Nathuwala",
+        "Chak No. 180 /RB Nathuwala"
+      ]
+    },
+    {
+      "uc_no": 20,
+      "canonical_name": "Chak No.184/RB Kot Nazim Din",
+      "aliases": [
+        "184 /RB Kot Nazim Din",
+        "Chak 184 /RB Kot Nazim Din",
+        "Chak No184 RB Kot Nazim Din",
+        "Chak No.184/RB Kot Nazim Din",
+        "Chak No 184 /RB Kot Nazim Din",
+        "Chak No. 184 /RB Kot Nazim Din"
+      ]
+    },
+    {
+      "uc_no": 21,
+      "canonical_name": "Chak No.12/GB Garmula",
+      "aliases": [
+        "12 /GB Garmula",
+        "Chak 12 /GB Garmula",
+        "Chak No12 GB Garmula",
+        "Chak No.12/GB Garmula",
+        "Chak No 12 /GB Garmula",
+        "Chak No. 12 /GB Garmula"
+      ]
+    },
+    {
+      "uc_no": 22,
+      "canonical_name": "Chak No.13 GB Randheer",
+      "aliases": [
+        "Randheer",
+        "Chak 13 GB",
+        "13 GB Randheer",
+        "13/GB Randheer",
+        "Chak 13 GB Randheer",
+        "Chak No13 GB Randheer",
+        "Chak No 13 GB Randheer",
+        "Chak No.13 GB Randheer",
+        "Chak No. 13 GB Randheer"
+      ]
+    },
+    {
+      "uc_no": 23,
+      "canonical_name": "Chak No.5/GB",
+      "aliases": [
+        "5 /GB",
+        "Chak 5 /GB",
+        "Chak No5 GB",
+        "Chak No.5/GB",
+        "Chak No 5 /GB",
+        "Chak No. 5 /GB"
+      ]
+    },
+    {
+      "uc_no": 24,
+      "canonical_name": "Chak No.4/GB Baghwanpura",
+      "aliases": [
+        "Baghwanpura",
+        "Baghwan Pura",
+        "4 /GB Baghwanpura",
+        "Chak 4 /GB Baghwanpura",
+        "Chak No4 GB Baghwanpura",
+        "Chak No.4/GB Baghwanpura",
+        "Chak No 4 /GB Baghwanpura",
+        "Chak No. 4 /GB Baghwanpura"
+      ]
+    },
+    {
+      "uc_no": 25,
+      "canonical_name": "Chak No.371/GB Martanpur",
+      "aliases": [
+        "371 /GB Martanpur",
+        "Chak 371 /GB Martanpur",
+        "Chak No371 GB Martanpur",
+        "Chak No.371/GB Martanpur",
+        "Chak No 371 /GB Martanpur",
+        "Chak No. 371 /GB Martanpur"
+      ]
+    },
+    {
+      "uc_no": 26,
+      "canonical_name": "Machrala",
+      "aliases": [
+        "Machrala"
+      ]
+    },
+    {
+      "uc_no": 27,
+      "canonical_name": "Shareen Jhangar",
+      "aliases": [
+        "Shareen Jhangar"
+      ]
+    },
+    {
+      "uc_no": 28,
+      "canonical_name": "Bal Lila (Ilyas Nagar)",
+      "aliases": [
+        "Bal Lila",
+        "Ilyas Nagar",
+        "Bal Lila Ilyas Nagar",
+        "Bal Lila (Ilyas Nagar)"
+      ]
+    },
+    {
+      "uc_no": 29,
+      "canonical_name": "Kot Hussain Khan",
+      "aliases": [
+        "Kot Hussain Khan"
+      ]
+    },
+    {
+      "uc_no": 30,
+      "canonical_name": "Malji (Dera Da Wara)",
+      "aliases": [
+        "Malji",
+        "Dera Da Wara",
+        "Malji Dera Da Wara",
+        "Malji (Dera Da Wara)"
+      ]
+    },
+    {
+      "uc_no": 31,
+      "canonical_name": "Nabi Pur Piran",
+      "aliases": [
+        "Nabi Pur Piran"
+      ]
+    },
+    {
+      "uc_no": 32,
+      "canonical_name": "Fatta Thatta",
+      "aliases": [
+        "Fatta Thatta"
+      ]
+    },
+    {
+      "uc_no": 33,
+      "canonical_name": "Khiare Kalan",
+      "aliases": [
+        "Khiare Kalan"
+      ]
+    },
+    {
+      "uc_no": 34,
+      "canonical_name": "Kot Namdar",
+      "aliases": [
+        "Kot Namdar"
+      ]
+    },
+    {
+      "uc_no": 35,
+      "canonical_name": "Barkhurdar",
+      "aliases": [
+        "Barkhurdar"
+      ]
+    },
+    {
+      "uc_no": 36,
+      "canonical_name": "Chak No.576/GB",
+      "aliases": [
+        "576 /GB",
+        "Chak 576 /GB",
+        "Chak No576 GB",
+        "Chak No.576/GB",
+        "Chak No 576 /GB",
+        "Chak No. 576 /GB"
+      ]
+    },
+    {
+      "uc_no": 37,
+      "canonical_name": "Jaslani",
+      "aliases": [
+        "Jaslani"
+      ]
+    },
+    {
+      "uc_no": 38,
+      "canonical_name": "Miran Pur",
+      "aliases": [
+        "Miranpur",
+        "Miran Pur"
+      ]
+    },
+    {
+      "uc_no": 39,
+      "canonical_name": "Joge Kout Nou Bahar",
+      "aliases": [
+        "Joge Kout Nou Bahar"
+      ]
+    },
+    {
+      "uc_no": 40,
+      "canonical_name": "Jowahapur",
+      "aliases": [
+        "Jowahapur"
+      ]
+    },
+    {
+      "uc_no": 41,
+      "canonical_name": "Rehanwala",
+      "aliases": [
+        "Rehanwala"
+      ]
+    },
+    {
+      "uc_no": 42,
+      "canonical_name": "Ganesh Pur",
+      "aliases": [
+        "Ganesh Pur"
+      ]
+    },
+    {
+      "uc_no": 43,
+      "canonical_name": "Chachke Gill",
+      "aliases": [
+        "Chachke Gill"
+      ]
+    },
+    {
+      "uc_no": 44,
+      "canonical_name": "Bhochoke Par",
+      "aliases": [
+        "Bhochoke Par"
+      ]
+    },
+    {
+      "uc_no": 45,
+      "canonical_name": "Mangtanwala",
+      "aliases": [
+        "Mangtanwala"
+      ]
+    },
+    {
+      "uc_no": 46,
+      "canonical_name": "Jalal Nau",
+      "aliases": [
+        "Jalalnau",
+        "Jalal Nau"
+      ]
+    },
+    {
+      "uc_no": 47,
+      "canonical_name": "Saleem Pur Pacca",
+      "aliases": [
+        "Saleem Pur Pacca"
+      ]
+    },
+    {
+      "uc_no": 48,
+      "canonical_name": "Hafit Madar",
+      "aliases": [
+        "Hafit Madar"
+      ]
+    },
+    {
+      "uc_no": 49,
+      "canonical_name": "Natha",
+      "aliases": [
+        "Natha"
+      ]
+    },
+    {
+      "uc_no": 50,
+      "canonical_name": "More Khunda",
+      "aliases": [
+        "Mor Khunda",
+        "More Khunda"
+      ]
+    },
+    {
+      "uc_no": 51,
+      "canonical_name": "Kot Benidas",
+      "aliases": [
+        "Kot Benidas"
+      ]
+    },
+    {
+      "uc_no": 52,
+      "canonical_name": "Chindpur",
+      "aliases": [
+        "Chindpur"
+      ]
+    },
+    {
+      "uc_no": 53,
+      "canonical_name": "Mora",
+      "aliases": [
+        "Mora"
+      ]
+    },
+    {
+      "uc_no": 54,
+      "canonical_name": "Bucheki",
+      "aliases": [
+        "Bucheki"
+      ]
+    },
+    {
+      "uc_no": 55,
+      "canonical_name": "Arazi Bucheki",
+      "aliases": [
+        "Arazi Bucheki"
+      ]
+    },
+    {
+      "uc_no": 56,
+      "canonical_name": "Lurka",
+      "aliases": [
+        "Lurka"
+      ]
+    },
+    {
+      "uc_no": 57,
+      "canonical_name": "Chak Hyderabad",
+      "aliases": [
+        "Chak Hyderabad"
+      ]
+    },
+    {
+      "uc_no": 58,
+      "canonical_name": "Bhara Ghar",
+      "aliases": [
+        "Bhara Ghar"
+      ]
+    },
+    {
+      "uc_no": 59,
+      "canonical_name": "Machora",
+      "aliases": [
+        "Machora"
+      ]
+    },
+    {
+      "uc_no": 60,
+      "canonical_name": "Fareed Abad",
+      "aliases": [
+        "Fareed Abad"
+      ]
+    },
+    {
+      "uc_no": 61,
+      "canonical_name": "Ali Juj",
+      "aliases": [
+        "Ali Juj"
+      ]
+    },
+    {
+      "uc_no": 62,
+      "canonical_name": "Malka Haji Mouj",
+      "aliases": [
+        "Malka Haji Mouj"
+      ]
+    },
+    {
+      "uc_no": 63,
+      "canonical_name": "Syed Wala",
+      "aliases": [
+        "Syedwala",
+        "Seyedwala",
+        "Syed Wala"
+      ]
+    },
+    {
+      "uc_no": 64,
+      "canonical_name": "Shah Balawal",
+      "aliases": [
+        "Shah Balawal"
+      ]
+    },
+    {
+      "uc_no": 65,
+      "canonical_name": "Meher Pur Meman",
+      "aliases": [
+        "Meher Pur Meman"
+      ]
+    }
+  ],
+  "additional_localities": [
+    "Janam Asthan",
+    "Abian Wala",
+    "Arazi Bacheke",
+    "Miran Pur",
+    "Mashmoola Jat",
+    "Jhangar",
+    "Tipayala",
+    "Tapiyala",
+    "Kona Tibba",
+    "Malook",
+    "Jaslani",
+    "Mangtan Wala",
+    "Chandi Kot",
+    "Hajji Kot",
+    "Hussain Kot",
+    "Canal Bridge Chowk Balochan",
+    "Bahawal Kot",
+    "Alawal Kot",
+    "Kot Zaid",
+    "Marh Sharqi",
+    "Marh Gharbi",
+    "Hamiroki",
+    "Rattian Gunian Wala",
+    "Jhugian",
+    "Ruryana",
+    "Pakhari Wali",
+    "Pandat Wala",
+    "Dheer",
+    "Chahoor Muslim",
+    "Chahoor Sikhan",
+    "Karmat Abad",
+    "Chahoor Mughlian",
+    "Kotla Kalan",
+    "Kotla Khurd",
+    "Chak No.7 Saini Bar",
+    "Chak No.5 Kalan",
+    "Bibi Jan Nankana Road",
+    "Machralla Road"
+  ],
+  "validation_records": [
+    {
+      "category": "district",
+      "canonical_name": "District Nankana Sahib",
+      "aliases": [
+        "District Nankana Sahib",
+        "Nankana Sahib",
+        "Nankana",
+        "Nankana Sahib District",
+        "ضلع ننکانہ صاحب",
+        "ننکانہ صاحب",
+        "ننکانہ"
+      ],
+      "normalized_aliases": [
+        "nankana",
+        "nankana sahib",
+        "ضلع ننکانہ صاحب",
+        "ننکانہ",
+        "ننکانہ صاحب"
+      ]
+    },
+    {
+      "category": "tehsil",
+      "canonical_name": "Nankana Sahib",
+      "aliases": [
+        "Nankana Sahib",
+        "Nankana",
+        "ننکانہ",
+        "ننکانہ صاحب"
+      ],
+      "normalized_aliases": [
+        "nankana",
+        "nankana sahib",
+        "ننکانہ",
+        "ننکانہ صاحب"
+      ]
+    },
+    {
+      "category": "tehsil",
+      "canonical_name": "Shahkot",
+      "aliases": [
+        "Shahkot",
+        "Shah Kot",
+        "شاہکوٹ"
+      ],
+      "normalized_aliases": [
+        "shah kot",
+        "shahkot",
+        "شاہکوٹ"
+      ]
+    },
+    {
+      "category": "tehsil",
+      "canonical_name": "Sangla Hill",
+      "aliases": [
+        "Sangla Hill",
+        "Sangla",
+        "سانگلہ ہل"
+      ],
+      "normalized_aliases": [
+        "sangla",
+        "sangla hill",
+        "سانگلہ ہل"
+      ]
+    },
+    {
+      "category": "municipal committee",
+      "canonical_name": "Municipal Committee, Nankana Sahib",
+      "aliases": [
+        "Municipal Committee, Nankana Sahib",
+        "Nankana Sahib MC",
+        "MC Nankana Sahib",
+        "Municipal Committee Nankana Sahib"
+      ],
+      "normalized_aliases": [
+        "nankana sahib"
+      ]
+    },
+    {
+      "category": "municipal committee",
+      "canonical_name": "Municipal Committee, Shahkot",
+      "aliases": [
+        "Municipal Committee, Shahkot",
+        "Shahkot MC",
+        "MC Shahkot",
+        "Municipal Committee Shahkot"
+      ],
+      "normalized_aliases": [
+        "shahkot"
+      ]
+    },
+    {
+      "category": "municipal committee",
+      "canonical_name": "Municipal Committee, Sangla Hill",
+      "aliases": [
+        "Municipal Committee, Sangla Hill",
+        "Sangla Hill MC",
+        "MC Sangla Hill",
+        "Municipal Committee Sangla Hill"
+      ],
+      "normalized_aliases": [
+        "sangla hill"
+      ]
+    },
+    {
+      "category": "town committee",
+      "canonical_name": "Town Committee, Warburton",
+      "aliases": [
+        "Town Committee, Warburton",
+        "Warburton TC",
+        "Town Committee Warburton",
+        "Warburton"
+      ],
+      "normalized_aliases": [
+        "warburton"
+      ]
+    },
+    {
+      "category": "town committee",
+      "canonical_name": "Town Committee, Mor Khunda",
+      "aliases": [
+        "Town Committee, Mor Khunda",
+        "Mor Khunda TC",
+        "Town Committee Mor Khunda",
+        "More Khunda",
+        "Mor Khunda"
+      ],
+      "normalized_aliases": [
+        "mor khunda",
+        "more khunda"
+      ]
+    },
+    {
+      "category": "town committee",
+      "canonical_name": "Town Committee, Syedwala",
+      "aliases": [
+        "Town Committee, Syedwala",
+        "Seyedwala",
+        "Syed Wala",
+        "Syedwala TC",
+        "Town Committee Syedwala"
+      ],
+      "normalized_aliases": [
+        "seyedwala",
+        "syed wala",
+        "syedwala"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 1: Marh Balochan",
+      "aliases": [
+        "UC 1: Marh Balochan",
+        "Marh Balochan"
+      ],
+      "normalized_aliases": [
+        "1 marh balochan",
+        "marh balochan"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 2: Chak No.28 RB Longowal",
+      "aliases": [
+        "UC 2: Chak No.28 RB Longowal",
+        "Longowal",
+        "Chak 28 RB",
+        "28 RB Longowal",
+        "28/RB Longowal",
+        "Chak 28 RB Longowal",
+        "Chak No28 RB Longowal",
+        "Chak No 28 RB Longowal",
+        "Chak No.28 RB Longowal",
+        "Chak No. 28 RB Longowal"
+      ],
+      "normalized_aliases": [
+        "2 chak 28 rb longowal",
+        "28 rb longowal",
+        "chak 28 rb",
+        "chak 28 rb longowal",
+        "chak no28 rb longowal",
+        "longowal"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 3: Chak No.113 RB Bado Malli",
+      "aliases": [
+        "UC 3: Chak No.113 RB Bado Malli",
+        "Bado Malli",
+        "Chak 113 RB",
+        "113 RB Bado Malli",
+        "113/RB Bado Malli",
+        "Chak 113 RB Bado Malli",
+        "Chak No113 RB Bado Malli",
+        "Chak No 113 RB Bado Malli",
+        "Chak No.113 RB Bado Malli",
+        "Chak No. 113 RB Bado Malli"
+      ],
+      "normalized_aliases": [
+        "113 rb bado malli",
+        "3 chak 113 rb bado malli",
+        "bado malli",
+        "chak 113 rb",
+        "chak 113 rb bado malli",
+        "chak no113 rb bado malli"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 4: Chak No.122/RB Phanodrian",
+      "aliases": [
+        "UC 4: Chak No.122/RB Phanodrian",
+        "Pandorian",
+        "Phanodrian",
+        "122 /RB Phanodrian",
+        "Chak 122 RB Pandorian",
+        "Chak 122 RB Phanodrian",
+        "Chak 122 /RB Phanodrian",
+        "Chak No122 RB Phanodrian",
+        "Chak No.122/RB Phanodrian",
+        "Chak No 122 /RB Phanodrian",
+        "Chak No. 122 /RB Phanodrian"
+      ],
+      "normalized_aliases": [
+        "122 rb phanodrian",
+        "4 chak 122 rb phanodrian",
+        "chak 122 rb pandorian",
+        "chak 122 rb phanodrian",
+        "chak no122 rb phanodrian",
+        "pandorian",
+        "phanodrian"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 5: Chak No.119 RB Bhulilar",
+      "aliases": [
+        "UC 5: Chak No.119 RB Bhulilar",
+        "Bhulilar",
+        "Chak 119 RB",
+        "119 RB Bhulilar",
+        "119/RB Bhulilar",
+        "Chak 119 RB Bhulilar",
+        "Chak No119 RB Bhulilar",
+        "Chak No 119 RB Bhulilar",
+        "Chak No.119 RB Bhulilar",
+        "Chak No. 119 RB Bhulilar"
+      ],
+      "normalized_aliases": [
+        "119 rb bhulilar",
+        "5 chak 119 rb bhulilar",
+        "bhulilar",
+        "chak 119 rb",
+        "chak 119 rb bhulilar",
+        "chak no119 rb bhulilar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 6: Chak No.118/RB Chahur Muslim",
+      "aliases": [
+        "UC 6: Chak No.118/RB Chahur Muslim",
+        "118 /RB Chahur Muslim",
+        "Chak 118 /RB Chahur Muslim",
+        "Chak No118 RB Chahur Muslim",
+        "Chak No.118/RB Chahur Muslim",
+        "Chak No 118 /RB Chahur Muslim",
+        "Chak No. 118 /RB Chahur Muslim"
+      ],
+      "normalized_aliases": [
+        "118 rb chahur muslim",
+        "6 chak 118 rb chahur muslim",
+        "chak 118 rb chahur muslim",
+        "chak no118 rb chahur muslim"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 7: Chak No.45/RB Marar",
+      "aliases": [
+        "UC 7: Chak No.45/RB Marar",
+        "45 /RB Marar",
+        "Chak 45 /RB Marar",
+        "Chak No45 RB Marar",
+        "Chak No.45/RB Marar",
+        "Chak No 45 /RB Marar",
+        "Chak No. 45 /RB Marar"
+      ],
+      "normalized_aliases": [
+        "45 rb marar",
+        "7 chak 45 rb marar",
+        "chak 45 rb marar",
+        "chak no45 rb marar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 8: Chak No.41/RB Marar Khurd",
+      "aliases": [
+        "UC 8: Chak No.41/RB Marar Khurd",
+        "41 /RB Marar Khurd",
+        "Chak 41 /RB Marar Khurd",
+        "Chak No41 RB Marar Khurd",
+        "Chak No.41/RB Marar Khurd",
+        "Chak No 41 /RB Marar Khurd",
+        "Chak No. 41 /RB Marar Khurd"
+      ],
+      "normalized_aliases": [
+        "41 rb marar khurd",
+        "8 chak 41 rb marar khurd",
+        "chak 41 rb marar khurd",
+        "chak no41 rb marar khurd"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 9: Chak No.292/RB Jhuggian",
+      "aliases": [
+        "UC 9: Chak No.292/RB Jhuggian",
+        "292 /RB Jhuggian",
+        "Chak 292 /RB Jhuggian",
+        "Chak No292 RB Jhuggian",
+        "Chak No.292/RB Jhuggian",
+        "Chak No 292 /RB Jhuggian",
+        "Chak No. 292 /RB Jhuggian"
+      ],
+      "normalized_aliases": [
+        "292 rb jhuggian",
+        "9 chak 292 rb jhuggian",
+        "chak 292 rb jhuggian",
+        "chak no292 rb jhuggian"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 10: Chak No.25RB Sathiali Kalan",
+      "aliases": [
+        "UC 10: Chak No.25RB Sathiali Kalan",
+        "Chak 25 RB",
+        "Sathiali Kalan",
+        "Sathyali Kalan",
+        "25 RB Sathiali Kalan",
+        "25/RB Sathiali Kalan",
+        "Chak 25 RB Sathiali Kalan",
+        "Chak No25RB Sathiali Kalan",
+        "Chak No.25RB Sathiali Kalan",
+        "Chak No 25 RB Sathiali Kalan",
+        "Chak No. 25 RB Sathiali Kalan"
+      ],
+      "normalized_aliases": [
+        "10 chak 25rb sathiali kalan",
+        "25 rb sathiali kalan",
+        "chak 25 rb",
+        "chak 25 rb sathiali kalan",
+        "chak 25rb sathiali kalan",
+        "chak no25rb sathiali kalan",
+        "sathiali kalan",
+        "sathyali kalan"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 11: Chak No.49 RB Kiriwala",
+      "aliases": [
+        "UC 11: Chak No.49 RB Kiriwala",
+        "Kiriwala",
+        "Chak 49 RB",
+        "49 RB Kiriwala",
+        "49/RB Kiriwala",
+        "Chak 49 RB Kiriwala",
+        "Chak No49 RB Kiriwala",
+        "Chak No 49 RB Kiriwala",
+        "Chak No.49 RB Kiriwala",
+        "Chak No. 49 RB Kiriwala"
+      ],
+      "normalized_aliases": [
+        "11 chak 49 rb kiriwala",
+        "49 rb kiriwala",
+        "chak 49 rb",
+        "chak 49 rb kiriwala",
+        "chak no49 rb kiriwala",
+        "kiriwala"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 12: Chak No.38/RB Nizam Pur",
+      "aliases": [
+        "UC 12: Chak No.38/RB Nizam Pur",
+        "38 /RB Nizam Pur",
+        "Chak 38 /RB Nizam Pur",
+        "Chak No38 RB Nizam Pur",
+        "Chak No.38/RB Nizam Pur",
+        "Chak No 38 /RB Nizam Pur",
+        "Chak No. 38 /RB Nizam Pur"
+      ],
+      "normalized_aliases": [
+        "12 chak 38 rb nizam pur",
+        "38 rb nizam pur",
+        "chak 38 rb nizam pur",
+        "chak no38 rb nizam pur"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 13: Chak No.82/RB Rasulpur Arian",
+      "aliases": [
+        "UC 13: Chak No.82/RB Rasulpur Arian",
+        "82 /RB Rasulpur Arian",
+        "Chak 82 /RB Rasulpur Arian",
+        "Chak No82 RB Rasulpur Arian",
+        "Chak No.82/RB Rasulpur Arian",
+        "Chak No 82 /RB Rasulpur Arian",
+        "Chak No. 82 /RB Rasulpur Arian"
+      ],
+      "normalized_aliases": [
+        "13 chak 82 rb rasulpur arian",
+        "82 rb rasulpur arian",
+        "chak 82 rb rasulpur arian",
+        "chak no82 rb rasulpur arian"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 14: Chak No.44/RB Kotla Kahlwan",
+      "aliases": [
+        "UC 14: Chak No.44/RB Kotla Kahlwan",
+        "44 /RB Kotla Kahlwan",
+        "Chak 44 /RB Kotla Kahlwan",
+        "Chak No44 RB Kotla Kahlwan",
+        "Chak No.44/RB Kotla Kahlwan",
+        "Chak No 44 /RB Kotla Kahlwan",
+        "Chak No. 44 /RB Kotla Kahlwan"
+      ],
+      "normalized_aliases": [
+        "14 chak 44 rb kotla kahlwan",
+        "44 rb kotla kahlwan",
+        "chak 44 rb kotla kahlwan",
+        "chak no44 rb kotla kahlwan"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 15: Chak No.168 RB Karkan",
+      "aliases": [
+        "UC 15: Chak No.168 RB Karkan",
+        "Karkan",
+        "Chak 168 RB",
+        "168 RB Karkan",
+        "168/RB Karkan",
+        "Chak 168 RB Karkan",
+        "Chak No168 RB Karkan",
+        "Chak No 168 RB Karkan",
+        "Chak No.168 RB Karkan",
+        "Chak No. 168 RB Karkan"
+      ],
+      "normalized_aliases": [
+        "15 chak 168 rb karkan",
+        "168 rb karkan",
+        "chak 168 rb",
+        "chak 168 rb karkan",
+        "chak no168 rb karkan",
+        "karkan"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 16: Chak No.175/RB Wali Pur Bura",
+      "aliases": [
+        "UC 16: Chak No.175/RB Wali Pur Bura",
+        "175 /RB Wali Pur Bura",
+        "Chak 175 /RB Wali Pur Bura",
+        "Chak No175 RB Wali Pur Bura",
+        "Chak No.175/RB Wali Pur Bura",
+        "Chak No 175 /RB Wali Pur Bura",
+        "Chak No. 175 /RB Wali Pur Bura"
+      ],
+      "normalized_aliases": [
+        "16 chak 175 rb wali pur bura",
+        "175 rb wali pur bura",
+        "chak 175 rb wali pur bura",
+        "chak no175 rb wali pur bura"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 17: Chak No.176/RB Panwan",
+      "aliases": [
+        "UC 17: Chak No.176/RB Panwan",
+        "176 /RB Panwan",
+        "Chak 176 /RB Panwan",
+        "Chak No176 RB Panwan",
+        "Chak No.176/RB Panwan",
+        "Chak No 176 /RB Panwan",
+        "Chak No. 176 /RB Panwan"
+      ],
+      "normalized_aliases": [
+        "17 chak 176 rb panwan",
+        "176 rb panwan",
+        "chak 176 rb panwan",
+        "chak no176 rb panwan"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 18: Chak No.179/RB Nodha",
+      "aliases": [
+        "UC 18: Chak No.179/RB Nodha",
+        "179 /RB Nodha",
+        "Chak 179 /RB Nodha",
+        "Chak No179 RB Nodha",
+        "Chak No.179/RB Nodha",
+        "Chak No 179 /RB Nodha",
+        "Chak No. 179 /RB Nodha"
+      ],
+      "normalized_aliases": [
+        "179 rb nodha",
+        "18 chak 179 rb nodha",
+        "chak 179 rb nodha",
+        "chak no179 rb nodha"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 19: Chak No.180/RB Nathuwala",
+      "aliases": [
+        "UC 19: Chak No.180/RB Nathuwala",
+        "180 /RB Nathuwala",
+        "Chak 180 /RB Nathuwala",
+        "Chak No180 RB Nathuwala",
+        "Chak No.180/RB Nathuwala",
+        "Chak No 180 /RB Nathuwala",
+        "Chak No. 180 /RB Nathuwala"
+      ],
+      "normalized_aliases": [
+        "180 rb nathuwala",
+        "19 chak 180 rb nathuwala",
+        "chak 180 rb nathuwala",
+        "chak no180 rb nathuwala"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 20: Chak No.184/RB Kot Nazim Din",
+      "aliases": [
+        "UC 20: Chak No.184/RB Kot Nazim Din",
+        "184 /RB Kot Nazim Din",
+        "Chak 184 /RB Kot Nazim Din",
+        "Chak No184 RB Kot Nazim Din",
+        "Chak No.184/RB Kot Nazim Din",
+        "Chak No 184 /RB Kot Nazim Din",
+        "Chak No. 184 /RB Kot Nazim Din"
+      ],
+      "normalized_aliases": [
+        "184 rb kot nazim din",
+        "20 chak 184 rb kot nazim din",
+        "chak 184 rb kot nazim din",
+        "chak no184 rb kot nazim din"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 21: Chak No.12/GB Garmula",
+      "aliases": [
+        "UC 21: Chak No.12/GB Garmula",
+        "12 /GB Garmula",
+        "Chak 12 /GB Garmula",
+        "Chak No12 GB Garmula",
+        "Chak No.12/GB Garmula",
+        "Chak No 12 /GB Garmula",
+        "Chak No. 12 /GB Garmula"
+      ],
+      "normalized_aliases": [
+        "12 gb garmula",
+        "21 chak 12 gb garmula",
+        "chak 12 gb garmula",
+        "chak no12 gb garmula"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 22: Chak No.13 GB Randheer",
+      "aliases": [
+        "UC 22: Chak No.13 GB Randheer",
+        "Randheer",
+        "Chak 13 GB",
+        "13 GB Randheer",
+        "13/GB Randheer",
+        "Chak 13 GB Randheer",
+        "Chak No13 GB Randheer",
+        "Chak No 13 GB Randheer",
+        "Chak No.13 GB Randheer",
+        "Chak No. 13 GB Randheer"
+      ],
+      "normalized_aliases": [
+        "13 gb randheer",
+        "22 chak 13 gb randheer",
+        "chak 13 gb",
+        "chak 13 gb randheer",
+        "chak no13 gb randheer",
+        "randheer"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 23: Chak No.5/GB",
+      "aliases": [
+        "UC 23: Chak No.5/GB",
+        "5 /GB",
+        "Chak 5 /GB",
+        "Chak No5 GB",
+        "Chak No.5/GB",
+        "Chak No 5 /GB",
+        "Chak No. 5 /GB"
+      ],
+      "normalized_aliases": [
+        "23 chak 5 gb",
+        "5 gb",
+        "chak 5 gb",
+        "chak no5 gb"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 24: Chak No.4/GB Baghwanpura",
+      "aliases": [
+        "UC 24: Chak No.4/GB Baghwanpura",
+        "Baghwanpura",
+        "Baghwan Pura",
+        "4 /GB Baghwanpura",
+        "Chak 4 /GB Baghwanpura",
+        "Chak No4 GB Baghwanpura",
+        "Chak No.4/GB Baghwanpura",
+        "Chak No 4 /GB Baghwanpura",
+        "Chak No. 4 /GB Baghwanpura"
+      ],
+      "normalized_aliases": [
+        "24 chak 4 gb baghwanpura",
+        "4 gb baghwanpura",
+        "baghwan pura",
+        "baghwanpura",
+        "chak 4 gb baghwanpura",
+        "chak no4 gb baghwanpura"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 25: Chak No.371/GB Martanpur",
+      "aliases": [
+        "UC 25: Chak No.371/GB Martanpur",
+        "371 /GB Martanpur",
+        "Chak 371 /GB Martanpur",
+        "Chak No371 GB Martanpur",
+        "Chak No.371/GB Martanpur",
+        "Chak No 371 /GB Martanpur",
+        "Chak No. 371 /GB Martanpur"
+      ],
+      "normalized_aliases": [
+        "25 chak 371 gb martanpur",
+        "371 gb martanpur",
+        "chak 371 gb martanpur",
+        "chak no371 gb martanpur"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 26: Machrala",
+      "aliases": [
+        "UC 26: Machrala",
+        "Machrala"
+      ],
+      "normalized_aliases": [
+        "26 machrala",
+        "machrala"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 27: Shareen Jhangar",
+      "aliases": [
+        "UC 27: Shareen Jhangar",
+        "Shareen Jhangar"
+      ],
+      "normalized_aliases": [
+        "27 shareen jhangar",
+        "shareen jhangar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 28: Bal Lila (Ilyas Nagar)",
+      "aliases": [
+        "UC 28: Bal Lila (Ilyas Nagar)",
+        "Bal Lila",
+        "Ilyas Nagar",
+        "Bal Lila Ilyas Nagar",
+        "Bal Lila (Ilyas Nagar)"
+      ],
+      "normalized_aliases": [
+        "28 bal lila ilyas nagar",
+        "bal lila",
+        "bal lila ilyas nagar",
+        "ilyas nagar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 29: Kot Hussain Khan",
+      "aliases": [
+        "UC 29: Kot Hussain Khan",
+        "Kot Hussain Khan"
+      ],
+      "normalized_aliases": [
+        "29 kot hussain khan",
+        "kot hussain khan"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 30: Malji (Dera Da Wara)",
+      "aliases": [
+        "UC 30: Malji (Dera Da Wara)",
+        "Malji",
+        "Dera Da Wara",
+        "Malji Dera Da Wara",
+        "Malji (Dera Da Wara)"
+      ],
+      "normalized_aliases": [
+        "30 malji dera da wara",
+        "dera da wara",
+        "malji",
+        "malji dera da wara"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 31: Nabi Pur Piran",
+      "aliases": [
+        "UC 31: Nabi Pur Piran",
+        "Nabi Pur Piran"
+      ],
+      "normalized_aliases": [
+        "31 nabi pur piran",
+        "nabi pur piran"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 32: Fatta Thatta",
+      "aliases": [
+        "UC 32: Fatta Thatta",
+        "Fatta Thatta"
+      ],
+      "normalized_aliases": [
+        "32 fatta thatta",
+        "fatta thatta"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 33: Khiare Kalan",
+      "aliases": [
+        "UC 33: Khiare Kalan",
+        "Khiare Kalan"
+      ],
+      "normalized_aliases": [
+        "33 khiare kalan",
+        "khiare kalan"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 34: Kot Namdar",
+      "aliases": [
+        "UC 34: Kot Namdar",
+        "Kot Namdar"
+      ],
+      "normalized_aliases": [
+        "34 kot namdar",
+        "kot namdar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 35: Barkhurdar",
+      "aliases": [
+        "UC 35: Barkhurdar",
+        "Barkhurdar"
+      ],
+      "normalized_aliases": [
+        "35 barkhurdar",
+        "barkhurdar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 36: Chak No.576/GB",
+      "aliases": [
+        "UC 36: Chak No.576/GB",
+        "576 /GB",
+        "Chak 576 /GB",
+        "Chak No576 GB",
+        "Chak No.576/GB",
+        "Chak No 576 /GB",
+        "Chak No. 576 /GB"
+      ],
+      "normalized_aliases": [
+        "36 chak 576 gb",
+        "576 gb",
+        "chak 576 gb",
+        "chak no576 gb"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 37: Jaslani",
+      "aliases": [
+        "UC 37: Jaslani",
+        "Jaslani"
+      ],
+      "normalized_aliases": [
+        "37 jaslani",
+        "jaslani"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 38: Miran Pur",
+      "aliases": [
+        "UC 38: Miran Pur",
+        "Miranpur",
+        "Miran Pur"
+      ],
+      "normalized_aliases": [
+        "38 miran pur",
+        "miran pur",
+        "miranpur"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 39: Joge Kout Nou Bahar",
+      "aliases": [
+        "UC 39: Joge Kout Nou Bahar",
+        "Joge Kout Nou Bahar"
+      ],
+      "normalized_aliases": [
+        "39 joge kout nou bahar",
+        "joge kout nou bahar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 40: Jowahapur",
+      "aliases": [
+        "UC 40: Jowahapur",
+        "Jowahapur"
+      ],
+      "normalized_aliases": [
+        "40 jowahapur",
+        "jowahapur"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 41: Rehanwala",
+      "aliases": [
+        "UC 41: Rehanwala",
+        "Rehanwala"
+      ],
+      "normalized_aliases": [
+        "41 rehanwala",
+        "rehanwala"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 42: Ganesh Pur",
+      "aliases": [
+        "UC 42: Ganesh Pur",
+        "Ganesh Pur"
+      ],
+      "normalized_aliases": [
+        "42 ganesh pur",
+        "ganesh pur"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 43: Chachke Gill",
+      "aliases": [
+        "UC 43: Chachke Gill",
+        "Chachke Gill"
+      ],
+      "normalized_aliases": [
+        "43 chachke gill",
+        "chachke gill"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 44: Bhochoke Par",
+      "aliases": [
+        "UC 44: Bhochoke Par",
+        "Bhochoke Par"
+      ],
+      "normalized_aliases": [
+        "44 bhochoke par",
+        "bhochoke par"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 45: Mangtanwala",
+      "aliases": [
+        "UC 45: Mangtanwala",
+        "Mangtanwala"
+      ],
+      "normalized_aliases": [
+        "45 mangtanwala",
+        "mangtanwala"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 46: Jalal Nau",
+      "aliases": [
+        "UC 46: Jalal Nau",
+        "Jalalnau",
+        "Jalal Nau"
+      ],
+      "normalized_aliases": [
+        "46 jalal nau",
+        "jalal nau",
+        "jalalnau"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 47: Saleem Pur Pacca",
+      "aliases": [
+        "UC 47: Saleem Pur Pacca",
+        "Saleem Pur Pacca"
+      ],
+      "normalized_aliases": [
+        "47 saleem pur pacca",
+        "saleem pur pacca"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 48: Hafit Madar",
+      "aliases": [
+        "UC 48: Hafit Madar",
+        "Hafit Madar"
+      ],
+      "normalized_aliases": [
+        "48 hafit madar",
+        "hafit madar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 49: Natha",
+      "aliases": [
+        "UC 49: Natha",
+        "Natha"
+      ],
+      "normalized_aliases": [
+        "49 natha",
+        "natha"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 50: More Khunda",
+      "aliases": [
+        "UC 50: More Khunda",
+        "Mor Khunda",
+        "More Khunda"
+      ],
+      "normalized_aliases": [
+        "50 more khunda",
+        "mor khunda",
+        "more khunda"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 51: Kot Benidas",
+      "aliases": [
+        "UC 51: Kot Benidas",
+        "Kot Benidas"
+      ],
+      "normalized_aliases": [
+        "51 kot benidas",
+        "kot benidas"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 52: Chindpur",
+      "aliases": [
+        "UC 52: Chindpur",
+        "Chindpur"
+      ],
+      "normalized_aliases": [
+        "52 chindpur",
+        "chindpur"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 53: Mora",
+      "aliases": [
+        "UC 53: Mora",
+        "Mora"
+      ],
+      "normalized_aliases": [
+        "53 mora",
+        "mora"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 54: Bucheki",
+      "aliases": [
+        "UC 54: Bucheki",
+        "Bucheki"
+      ],
+      "normalized_aliases": [
+        "54 bucheki",
+        "bucheki"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 55: Arazi Bucheki",
+      "aliases": [
+        "UC 55: Arazi Bucheki",
+        "Arazi Bucheki"
+      ],
+      "normalized_aliases": [
+        "55 arazi bucheki",
+        "arazi bucheki"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 56: Lurka",
+      "aliases": [
+        "UC 56: Lurka",
+        "Lurka"
+      ],
+      "normalized_aliases": [
+        "56 lurka",
+        "lurka"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 57: Chak Hyderabad",
+      "aliases": [
+        "UC 57: Chak Hyderabad",
+        "Chak Hyderabad"
+      ],
+      "normalized_aliases": [
+        "57 chak hyderabad",
+        "chak hyderabad"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 58: Bhara Ghar",
+      "aliases": [
+        "UC 58: Bhara Ghar",
+        "Bhara Ghar"
+      ],
+      "normalized_aliases": [
+        "58 bhara ghar",
+        "bhara ghar"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 59: Machora",
+      "aliases": [
+        "UC 59: Machora",
+        "Machora"
+      ],
+      "normalized_aliases": [
+        "59 machora",
+        "machora"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 60: Fareed Abad",
+      "aliases": [
+        "UC 60: Fareed Abad",
+        "Fareed Abad"
+      ],
+      "normalized_aliases": [
+        "60 fareed abad",
+        "fareed abad"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 61: Ali Juj",
+      "aliases": [
+        "UC 61: Ali Juj",
+        "Ali Juj"
+      ],
+      "normalized_aliases": [
+        "61 ali juj",
+        "ali juj"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 62: Malka Haji Mouj",
+      "aliases": [
+        "UC 62: Malka Haji Mouj",
+        "Malka Haji Mouj"
+      ],
+      "normalized_aliases": [
+        "62 malka haji mouj",
+        "malka haji mouj"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 63: Syed Wala",
+      "aliases": [
+        "UC 63: Syed Wala",
+        "Syedwala",
+        "Seyedwala",
+        "Syed Wala"
+      ],
+      "normalized_aliases": [
+        "63 syed wala",
+        "seyedwala",
+        "syed wala",
+        "syedwala"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 64: Shah Balawal",
+      "aliases": [
+        "UC 64: Shah Balawal",
+        "Shah Balawal"
+      ],
+      "normalized_aliases": [
+        "64 shah balawal",
+        "shah balawal"
+      ]
+    },
+    {
+      "category": "union_council",
+      "canonical_name": "UC 65: Meher Pur Meman",
+      "aliases": [
+        "UC 65: Meher Pur Meman",
+        "Meher Pur Meman"
+      ],
+      "normalized_aliases": [
+        "65 meher pur meman",
+        "meher pur meman"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Janam Asthan",
+      "aliases": [
+        "Janam Asthan"
+      ],
+      "normalized_aliases": [
+        "janam asthan"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Abian Wala",
+      "aliases": [
+        "Abian Wala"
+      ],
+      "normalized_aliases": [
+        "abian wala"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Arazi Bacheke",
+      "aliases": [
+        "Arazi Bacheke"
+      ],
+      "normalized_aliases": [
+        "arazi bacheke"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Miran Pur",
+      "aliases": [
+        "Miran Pur"
+      ],
+      "normalized_aliases": [
+        "miran pur"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Mashmoola Jat",
+      "aliases": [
+        "Mashmoola Jat"
+      ],
+      "normalized_aliases": [
+        "mashmoola jat"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Jhangar",
+      "aliases": [
+        "Jhangar"
+      ],
+      "normalized_aliases": [
+        "jhangar"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Tipayala",
+      "aliases": [
+        "Tipayala"
+      ],
+      "normalized_aliases": [
+        "tipayala"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Tapiyala",
+      "aliases": [
+        "Tapiyala"
+      ],
+      "normalized_aliases": [
+        "tapiyala"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Kona Tibba",
+      "aliases": [
+        "Kona Tibba"
+      ],
+      "normalized_aliases": [
+        "kona tibba"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Malook",
+      "aliases": [
+        "Malook"
+      ],
+      "normalized_aliases": [
+        "malook"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Jaslani",
+      "aliases": [
+        "Jaslani"
+      ],
+      "normalized_aliases": [
+        "jaslani"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Mangtan Wala",
+      "aliases": [
+        "Mangtan Wala"
+      ],
+      "normalized_aliases": [
+        "mangtan wala"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Chandi Kot",
+      "aliases": [
+        "Chandi Kot"
+      ],
+      "normalized_aliases": [
+        "chandi kot"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Hajji Kot",
+      "aliases": [
+        "Hajji Kot"
+      ],
+      "normalized_aliases": [
+        "hajji kot"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Hussain Kot",
+      "aliases": [
+        "Hussain Kot"
+      ],
+      "normalized_aliases": [
+        "hussain kot"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Canal Bridge Chowk Balochan",
+      "aliases": [
+        "Canal Bridge Chowk Balochan"
+      ],
+      "normalized_aliases": [
+        "canal bridge chowk balochan"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Bahawal Kot",
+      "aliases": [
+        "Bahawal Kot"
+      ],
+      "normalized_aliases": [
+        "bahawal kot"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Alawal Kot",
+      "aliases": [
+        "Alawal Kot"
+      ],
+      "normalized_aliases": [
+        "alawal kot"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Kot Zaid",
+      "aliases": [
+        "Kot Zaid"
+      ],
+      "normalized_aliases": [
+        "kot zaid"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Marh Sharqi",
+      "aliases": [
+        "Marh Sharqi"
+      ],
+      "normalized_aliases": [
+        "marh sharqi"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Marh Gharbi",
+      "aliases": [
+        "Marh Gharbi"
+      ],
+      "normalized_aliases": [
+        "marh gharbi"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Hamiroki",
+      "aliases": [
+        "Hamiroki"
+      ],
+      "normalized_aliases": [
+        "hamiroki"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Rattian Gunian Wala",
+      "aliases": [
+        "Rattian Gunian Wala"
+      ],
+      "normalized_aliases": [
+        "rattian gunian wala"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Jhugian",
+      "aliases": [
+        "Jhugian"
+      ],
+      "normalized_aliases": [
+        "jhugian"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Ruryana",
+      "aliases": [
+        "Ruryana"
+      ],
+      "normalized_aliases": [
+        "ruryana"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Pakhari Wali",
+      "aliases": [
+        "Pakhari Wali"
+      ],
+      "normalized_aliases": [
+        "pakhari wali"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Pandat Wala",
+      "aliases": [
+        "Pandat Wala"
+      ],
+      "normalized_aliases": [
+        "pandat wala"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Dheer",
+      "aliases": [
+        "Dheer"
+      ],
+      "normalized_aliases": [
+        "dheer"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Chahoor Muslim",
+      "aliases": [
+        "Chahoor Muslim"
+      ],
+      "normalized_aliases": [
+        "chahoor muslim"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Chahoor Sikhan",
+      "aliases": [
+        "Chahoor Sikhan"
+      ],
+      "normalized_aliases": [
+        "chahoor sikhan"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Karmat Abad",
+      "aliases": [
+        "Karmat Abad"
+      ],
+      "normalized_aliases": [
+        "karmat abad"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Chahoor Mughlian",
+      "aliases": [
+        "Chahoor Mughlian"
+      ],
+      "normalized_aliases": [
+        "chahoor mughlian"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Kotla Kalan",
+      "aliases": [
+        "Kotla Kalan"
+      ],
+      "normalized_aliases": [
+        "kotla kalan"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Kotla Khurd",
+      "aliases": [
+        "Kotla Khurd"
+      ],
+      "normalized_aliases": [
+        "kotla khurd"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Chak No.7 Saini Bar",
+      "aliases": [
+        "Chak No.7 Saini Bar"
+      ],
+      "normalized_aliases": [
+        "chak 7 saini bar"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Chak No.5 Kalan",
+      "aliases": [
+        "Chak No.5 Kalan"
+      ],
+      "normalized_aliases": [
+        "chak 5 kalan"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Bibi Jan Nankana Road",
+      "aliases": [
+        "Bibi Jan Nankana Road"
+      ],
+      "normalized_aliases": [
+        "bibi jan nankana road"
+      ]
+    },
+    {
+      "category": "locality",
+      "canonical_name": "Machralla Road",
+      "aliases": [
+        "Machralla Road"
+      ],
+      "normalized_aliases": [
+        "machralla road"
+      ]
+    }
+  ],
+  "flat_keywords": [
+    "District Nankana Sahib",
+    "Nankana Sahib",
+    "Nankana",
+    "Nankana Sahib District",
+    "ضلع ننکانہ صاحب",
+    "ننکانہ صاحب",
+    "ننکانہ",
+    "Shahkot",
+    "Sangla Hill",
+    "Shah Kot",
+    "شاہکوٹ",
+    "Sangla",
+    "سانگلہ ہل",
+    "Municipal Committee, Nankana Sahib",
+    "Municipal Committee, Shahkot",
+    "Municipal Committee, Sangla Hill",
+    "Town Committee, Warburton",
+    "Town Committee, Mor Khunda",
+    "Town Committee, Syedwala",
+    "Nankana Sahib MC",
+    "MC Nankana Sahib",
+    "Municipal Committee Nankana Sahib",
+    "Shahkot MC",
+    "MC Shahkot",
+    "Municipal Committee Shahkot",
+    "Sangla Hill MC",
+    "MC Sangla Hill",
+    "Municipal Committee Sangla Hill",
+    "Warburton TC",
+    "Town Committee Warburton",
+    "Warburton",
+    "Mor Khunda TC",
+    "Town Committee Mor Khunda",
+    "More Khunda",
+    "Mor Khunda",
+    "Seyedwala",
+    "Syed Wala",
+    "Syedwala TC",
+    "Town Committee Syedwala",
+    "Marh Balochan",
+    "Chak No.28 RB Longowal",
+    "Chak No.113 RB Bado Malli",
+    "Chak No.122/RB Phanodrian",
+    "Chak No.119 RB Bhulilar",
+    "Chak No.118/RB Chahur Muslim",
+    "Chak No.45/RB Marar",
+    "Chak No.41/RB Marar Khurd",
+    "Chak No.292/RB Jhuggian",
+    "Chak No.25RB Sathiali Kalan",
+    "Chak No.49 RB Kiriwala",
+    "Chak No.38/RB Nizam Pur",
+    "Chak No.82/RB Rasulpur Arian",
+    "Chak No.44/RB Kotla Kahlwan",
+    "Chak No.168 RB Karkan",
+    "Chak No.175/RB Wali Pur Bura",
+    "Chak No.176/RB Panwan",
+    "Chak No.179/RB Nodha",
+    "Chak No.180/RB Nathuwala",
+    "Chak No.184/RB Kot Nazim Din",
+    "Chak No.12/GB Garmula",
+    "Chak No.13 GB Randheer",
+    "Chak No.5/GB",
+    "Chak No.4/GB Baghwanpura",
+    "Chak No.371/GB Martanpur",
+    "Machrala",
+    "Shareen Jhangar",
+    "Bal Lila (Ilyas Nagar)",
+    "Kot Hussain Khan",
+    "Malji (Dera Da Wara)",
+    "Nabi Pur Piran",
+    "Fatta Thatta",
+    "Khiare Kalan",
+    "Kot Namdar",
+    "Barkhurdar",
+    "Chak No.576/GB",
+    "Jaslani",
+    "Miran Pur",
+    "Joge Kout Nou Bahar",
+    "Jowahapur",
+    "Rehanwala",
+    "Ganesh Pur",
+    "Chachke Gill",
+    "Bhochoke Par",
+    "Mangtanwala",
+    "Jalal Nau",
+    "Saleem Pur Pacca",
+    "Hafit Madar",
+    "Natha",
+    "Kot Benidas",
+    "Chindpur",
+    "Mora",
+    "Bucheki",
+    "Arazi Bucheki",
+    "Lurka",
+    "Chak Hyderabad",
+    "Bhara Ghar",
+    "Machora",
+    "Fareed Abad",
+    "Ali Juj",
+    "Malka Haji Mouj",
+    "Shah Balawal",
+    "Meher Pur Meman",
+    "Longowal",
+    "Chak 28 RB",
+    "28 RB Longowal",
+    "28/RB Longowal",
+    "Chak 28 RB Longowal",
+    "Chak No28 RB Longowal",
+    "Chak No 28 RB Longowal",
+    "Chak No. 28 RB Longowal",
+    "Bado Malli",
+    "Chak 113 RB",
+    "113 RB Bado Malli",
+    "113/RB Bado Malli",
+    "Chak 113 RB Bado Malli",
+    "Chak No113 RB Bado Malli",
+    "Chak No 113 RB Bado Malli",
+    "Chak No. 113 RB Bado Malli",
+    "Pandorian",
+    "Phanodrian",
+    "122 /RB Phanodrian",
+    "Chak 122 RB Pandorian",
+    "Chak 122 RB Phanodrian",
+    "Chak 122 /RB Phanodrian",
+    "Chak No122 RB Phanodrian",
+    "Chak No 122 /RB Phanodrian",
+    "Chak No. 122 /RB Phanodrian",
+    "Bhulilar",
+    "Chak 119 RB",
+    "119 RB Bhulilar",
+    "119/RB Bhulilar",
+    "Chak 119 RB Bhulilar",
+    "Chak No119 RB Bhulilar",
+    "Chak No 119 RB Bhulilar",
+    "Chak No. 119 RB Bhulilar",
+    "118 /RB Chahur Muslim",
+    "Chak 118 /RB Chahur Muslim",
+    "Chak No118 RB Chahur Muslim",
+    "Chak No 118 /RB Chahur Muslim",
+    "Chak No. 118 /RB Chahur Muslim",
+    "45 /RB Marar",
+    "Chak 45 /RB Marar",
+    "Chak No45 RB Marar",
+    "Chak No 45 /RB Marar",
+    "Chak No. 45 /RB Marar",
+    "41 /RB Marar Khurd",
+    "Chak 41 /RB Marar Khurd",
+    "Chak No41 RB Marar Khurd",
+    "Chak No 41 /RB Marar Khurd",
+    "Chak No. 41 /RB Marar Khurd",
+    "292 /RB Jhuggian",
+    "Chak 292 /RB Jhuggian",
+    "Chak No292 RB Jhuggian",
+    "Chak No 292 /RB Jhuggian",
+    "Chak No. 292 /RB Jhuggian",
+    "Chak 25 RB",
+    "Sathiali Kalan",
+    "Sathyali Kalan",
+    "25 RB Sathiali Kalan",
+    "25/RB Sathiali Kalan",
+    "Chak 25 RB Sathiali Kalan",
+    "Chak No25RB Sathiali Kalan",
+    "Chak No 25 RB Sathiali Kalan",
+    "Chak No. 25 RB Sathiali Kalan",
+    "Kiriwala",
+    "Chak 49 RB",
+    "49 RB Kiriwala",
+    "49/RB Kiriwala",
+    "Chak 49 RB Kiriwala",
+    "Chak No49 RB Kiriwala",
+    "Chak No 49 RB Kiriwala",
+    "Chak No. 49 RB Kiriwala",
+    "38 /RB Nizam Pur",
+    "Chak 38 /RB Nizam Pur",
+    "Chak No38 RB Nizam Pur",
+    "Chak No 38 /RB Nizam Pur",
+    "Chak No. 38 /RB Nizam Pur",
+    "82 /RB Rasulpur Arian",
+    "Chak 82 /RB Rasulpur Arian",
+    "Chak No82 RB Rasulpur Arian",
+    "Chak No 82 /RB Rasulpur Arian",
+    "Chak No. 82 /RB Rasulpur Arian",
+    "44 /RB Kotla Kahlwan",
+    "Chak 44 /RB Kotla Kahlwan",
+    "Chak No44 RB Kotla Kahlwan",
+    "Chak No 44 /RB Kotla Kahlwan",
+    "Chak No. 44 /RB Kotla Kahlwan",
+    "Karkan",
+    "Chak 168 RB",
+    "168 RB Karkan",
+    "168/RB Karkan",
+    "Chak 168 RB Karkan",
+    "Chak No168 RB Karkan",
+    "Chak No 168 RB Karkan",
+    "Chak No. 168 RB Karkan",
+    "175 /RB Wali Pur Bura",
+    "Chak 175 /RB Wali Pur Bura",
+    "Chak No175 RB Wali Pur Bura",
+    "Chak No 175 /RB Wali Pur Bura",
+    "Chak No. 175 /RB Wali Pur Bura",
+    "176 /RB Panwan",
+    "Chak 176 /RB Panwan",
+    "Chak No176 RB Panwan",
+    "Chak No 176 /RB Panwan",
+    "Chak No. 176 /RB Panwan",
+    "179 /RB Nodha",
+    "Chak 179 /RB Nodha",
+    "Chak No179 RB Nodha",
+    "Chak No 179 /RB Nodha",
+    "Chak No. 179 /RB Nodha",
+    "180 /RB Nathuwala",
+    "Chak 180 /RB Nathuwala",
+    "Chak No180 RB Nathuwala",
+    "Chak No 180 /RB Nathuwala",
+    "Chak No. 180 /RB Nathuwala",
+    "184 /RB Kot Nazim Din",
+    "Chak 184 /RB Kot Nazim Din",
+    "Chak No184 RB Kot Nazim Din",
+    "Chak No 184 /RB Kot Nazim Din",
+    "Chak No. 184 /RB Kot Nazim Din",
+    "12 /GB Garmula",
+    "Chak 12 /GB Garmula",
+    "Chak No12 GB Garmula",
+    "Chak No 12 /GB Garmula",
+    "Chak No. 12 /GB Garmula",
+    "Randheer",
+    "Chak 13 GB",
+    "13 GB Randheer",
+    "13/GB Randheer",
+    "Chak 13 GB Randheer",
+    "Chak No13 GB Randheer",
+    "Chak No 13 GB Randheer",
+    "Chak No. 13 GB Randheer",
+    "5 /GB",
+    "Chak 5 /GB",
+    "Chak No5 GB",
+    "Chak No 5 /GB",
+    "Chak No. 5 /GB",
+    "Baghwanpura",
+    "Baghwan Pura",
+    "4 /GB Baghwanpura",
+    "Chak 4 /GB Baghwanpura",
+    "Chak No4 GB Baghwanpura",
+    "Chak No 4 /GB Baghwanpura",
+    "Chak No. 4 /GB Baghwanpura",
+    "371 /GB Martanpur",
+    "Chak 371 /GB Martanpur",
+    "Chak No371 GB Martanpur",
+    "Chak No 371 /GB Martanpur",
+    "Chak No. 371 /GB Martanpur",
+    "Bal Lila",
+    "Ilyas Nagar",
+    "Bal Lila Ilyas Nagar",
+    "Malji",
+    "Dera Da Wara",
+    "Malji Dera Da Wara",
+    "576 /GB",
+    "Chak 576 /GB",
+    "Chak No576 GB",
+    "Chak No 576 /GB",
+    "Chak No. 576 /GB",
+    "Miranpur",
+    "Jalalnau",
+    "Syedwala",
+    "Janam Asthan",
+    "Abian Wala",
+    "Arazi Bacheke",
+    "Mashmoola Jat",
+    "Jhangar",
+    "Tipayala",
+    "Tapiyala",
+    "Kona Tibba",
+    "Malook",
+    "Mangtan Wala",
+    "Chandi Kot",
+    "Hajji Kot",
+    "Hussain Kot",
+    "Canal Bridge Chowk Balochan",
+    "Bahawal Kot",
+    "Alawal Kot",
+    "Kot Zaid",
+    "Marh Sharqi",
+    "Marh Gharbi",
+    "Hamiroki",
+    "Rattian Gunian Wala",
+    "Jhugian",
+    "Ruryana",
+    "Pakhari Wali",
+    "Pandat Wala",
+    "Dheer",
+    "Chahoor Muslim",
+    "Chahoor Sikhan",
+    "Karmat Abad",
+    "Chahoor Mughlian",
+    "Kotla Kalan",
+    "Kotla Khurd",
+    "Chak No.7 Saini Bar",
+    "Chak No.5 Kalan",
+    "Bibi Jan Nankana Road",
+    "Machralla Road"
+  ],
+  "normalization_rules": {
+    "lowercase": true,
+    "strip_punctuation": true,
+    "collapse_whitespace": true,
+    "remove_common_prefixes": [
+      "district",
+      "tehsil",
+      "uc",
+      "mc",
+      "tc"
+    ],
+    "accept_variants": [
+      "Nankana Sahib / Nankana / ننکانہ",
+      "Shahkot / Shah Kot / شاہکوٹ",
+      "Sangla Hill / Sangla / سانگلہ ہل"
+    ]
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "name": "form",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nhc-donor-registration",
+        "responseMode": "lastNode",
+        "responseData": "allEntries",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -224,
+        -48
+      ],
+      "id": "0b63c6f9-f0fe-47ed-9072-e8fc2f352b63",
+      "name": "Webhook",
+      "webhookId": "f4e4264e-b849-4f9c-a19b-f5aa9f9530d7"
+    },
+    {
+      "parameters": {
+        "jsCode": "const incomingItems = $input.all();\nconst results = [];\n\nfor (let item of incomingItems) {\n  // Safe payload extraction\n  const rawData = item.json.body?.donorData || item.json.donorData || item.json;\n\n  // Sanitize and Clean Name (Capitalize first letters)\n  const cleanName = rawData.name \n    ? rawData.name.trim().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ')\n    : 'Anonymous Donor';\n\n  // Sanitize and Clean Mobile Number to international format\n  let cleanMobile = rawData.mobile ? rawData.mobile.replace(/[^0-9]/g, '') : '';\n  if (cleanMobile.startsWith('03')) {\n    cleanMobile = '92' + cleanMobile.slice(1);\n  }\n\n  // Construct the output structure safely\n  results.push({\n    json: {\n      name: cleanName,\n      mobile: cleanMobile,\n      bloodGroup: rawData.bloodGroup ? rawData.bloodGroup.toUpperCase().trim() : 'O+',\n      age: parseInt(rawData.age) || 26,\n      address: rawData.address ? rawData.address.trim() : 'Nankana Sahib',\n      medicalHistory: rawData.medicalHistory ? rawData.medicalHistory.trim() : 'None',\n      registrationDate: new Date().toLocaleDateString('en-PK', { timeZone: 'Asia/Karachi' })\n    }\n  });\n}\n\nreturn results;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        -48
+      ],
+      "id": "8848931d-c1bb-43dd-9b1e-5117c86d3c32",
+      "name": "JavaScript Code"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/1exeaE_MdsWKvnWKIwpglHmjV7WOCdd15pan5lJLDAS8/edit?gid=0#gid=0",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1exeaE_MdsWKvnWKIwpglHmjV7WOCdd15pan5lJLDAS8/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "TimeStamp": "={{ $json.registrationDate }}",
+            "Name": "={{ $json.name }}",
+            "Address": "={{ $json.address }}",
+            "Mobile": "={{ $json.mobile }}",
+            "Age": "={{ $json.age }}",
+            "BloodGroup": "={{ $json.bloodGroup }}",
+            "MedicalHistory": "={{ $json.medicalHistory }}",
+            "IsAvailable": "TRUE"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "TimeStamp",
+              "displayName": "TimeStamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Address",
+              "displayName": "Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Mobile",
+              "displayName": "Mobile",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Age",
+              "displayName": "Age",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "BloodGroup",
+              "displayName": "BloodGroup",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "MedicalHistory",
+              "displayName": "MedicalHistory",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "IsAvailable",
+              "displayName": "IsAvailable",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "locationDefine": {
+            "values": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [
+        224,
+        -48
+      ],
+      "id": "135859ec-9797-4316-91c2-8dc3eaa0227c",
+      "name": "Google Sheets",
+      "credentials": {
+        "googleApi": {
+          "id": "7tLIslJabbm8ppIL",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://pregnancy-footpad-wince.ngrok-free.dev/api/donors/register",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "phone",
+              "value": "={{ $json.mobile }}"
+            },
+            {
+              "name": "name",
+              "value": "={{ $json.name }}"
+            },
+            {
+              "name": "bloodGroup",
+              "value": "={{ $json.bloodGroup }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        448,
+        -48
+      ],
+      "id": "73f3d7e1-55c9-49dc-beca-01655dd166e1",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "JavaScript Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "JavaScript Code": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "ad26905b-b605-47db-818c-17d066941f38",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7ea64687315a8d5dd758bcba85115f22d5dcc71ba3df86c78551b69ba6a6318d"
+  },
+  "nodeGroups": [],
+  "id": "e0G3mfQR7POEHGOe",
+  "tags": []
+}

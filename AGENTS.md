@@ -8,7 +8,8 @@ Part of a 3-tier ecosystem: this is **Tier 1** (public brochure). Supabase crede
 
 ## Architecture
 
-- **1 HTML file**: `index.html` — single-page brochure (hero, services, booking form)
+- **`index.html`** — single-page brochure (hero, services, booking form, blood donation teaser)
+- **`blood.html`** — Volunteer Blood Donation portal (standalone page, no build step). Two-column layout: donor registration form + emergency matching directory. Interfaces with an Express/Google Sheets backend via `POST /api/donors/register` and `POST /api/donors/match`. Vanilla JS, scoped CSS — no framework.
 - **`js/app.js`** — classic `<script>`, injects shared header/footer/WhatsApp FAB. Handles language toggle (EN/UR), scroll-reveal animations, scroll spy, and Supabase booking form submission. Nav active state driven by scroll position.
 - **`css/style.css`** — Material Design 3–inspired tokens, all in one file.
 
