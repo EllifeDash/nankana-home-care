@@ -168,15 +168,19 @@
           "parameters": [
             {
               "name": "phone",
-              "value": "={{ $json.mobile }}"
+              "value": "={{ $node[\"JavaScript Code\"].json.mobile }}"
             },
             {
               "name": "name",
-              "value": "={{ $json.name }}"
+              "value": "={{ $node[\"JavaScript Code\"].json.name }}"
             },
             {
               "name": "bloodGroup",
-              "value": "={{ $json.bloodGroup }}"
+              "value": "={{ $node[\"JavaScript Code\"].json.bloodGroup }}"
+            },
+            {
+              "name": "address",
+              "value": "={{ $node[\"JavaScript Code\"].json.address }}"
             }
           ]
         },
