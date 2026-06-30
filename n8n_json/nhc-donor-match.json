@@ -1,0 +1,74 @@
+{
+  "name": "nhc-donor-match",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nhc-donor-match",
+        "responseMode": "lastNode",
+        "responseData": "firstEntryJson",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -300,
+        -80
+      ],
+      "id": "webhook-match-001",
+      "name": "Webhook"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/donors/match",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "requiredBloodGroup",
+              "value": "={{ $json.requiredBloodGroup }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        100,
+        -80
+      ],
+      "id": "http-match-001",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "match-v1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7ea64687315a8d5dd758bcba85115f22d5dcc71ba3df86c78551b69ba6a6318d"
+  },
+  "nodeGroups": [],
+  "id": "match-workflow-001",
+  "tags": []
+}
