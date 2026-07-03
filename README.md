@@ -42,12 +42,13 @@ nankana-home-care/
 
 ## Blood Donation Portal
 
-The `blood.html` page is a standalone volunteer blood bank system with two functions:
+The `blood.html` page is a standalone volunteer blood bank system with three integrated functions:
 
-1. **Donor Registration** — submits to `POST /api/donors/register` on an external Express/Google Sheets backend
-2. **Emergency Matching** — queries `POST /api/donors/match` and displays verified donors with tap-to-call dialer
+1. **Phone Gatekeeper** — verifies visitor's phone against `donors` table; registered donors unlock the search feature, unregistered visitors are prompted to register
+2. **Donor Registration** — writes directly to Supabase `donors` table via `supabase.from('donors').insert()`
+3. **Emergency Matching** — queries Supabase by blood group and renders donor cards with WhatsApp click-to-chat links
 
-**Configuration:** Update `API_BASE` in `blood.html` (line ~205) to point to the deployed backend before going live.
+**Configuration:** Supabase credentials (`SUPABASE_URL`, `SUPABASE_ANON_KEY`) are injected at CI time via `deploy.yml` — same mechanism as the booking form.
 
 ## Deployment
 

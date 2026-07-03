@@ -1,0 +1,23 @@
+# Supabase CLI local config
+supabase/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/settings.json
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*

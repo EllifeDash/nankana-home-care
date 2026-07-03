@@ -25,6 +25,8 @@ jobs:
         run: |
           sed -i "s|YOUR_SUPABASE_URL|${{ secrets.SUPABASE_URL }}|g" js/app.js
           sed -i "s|YOUR_SUPABASE_ANON_KEY|${{ secrets.SUPABASE_ANON_KEY }}|g" js/app.js
+          sed -i "s|YOUR_SUPABASE_URL|${{ secrets.SUPABASE_URL }}|g" blood.html
+          sed -i "s|YOUR_SUPABASE_ANON_KEY|${{ secrets.SUPABASE_ANON_KEY }}|g" blood.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
